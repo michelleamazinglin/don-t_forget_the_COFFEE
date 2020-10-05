@@ -12,13 +12,15 @@ import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
     // debugger
-    const listId = parseInt(ownProps.match.params.listId)
+    const showCompleted = state.ui.showCompleted;
+    const listId = parseInt(ownProps.match.params.listId);
     return {
         listId: listId,
         tasks: Object.values(state.entities.tasks).filter(task => {
             // debugger
             return task.listId === listId
-        })
+        }),
+        showCompleted: showCompleted,
     };
 };
 

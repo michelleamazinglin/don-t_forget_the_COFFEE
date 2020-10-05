@@ -18,6 +18,8 @@ class TaskIndex extends React.Component {
         } 
     }
 
+    
+
     render() {
         const time = (a, b) => {
             if (a.update_at < b.update_at) {

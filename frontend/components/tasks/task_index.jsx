@@ -60,7 +60,7 @@ class TaskIndex extends React.Component {
                     <div className="list-summary-content">
                         <div className="list-summary-item">
                             <p>{TasksNum}</p>
-                            <p> tasks </p>  
+                            <p> {(TasksNum < 2) ? 'task' : 'tasks'} </p>  
                         </div>
                     </div>
              </div>

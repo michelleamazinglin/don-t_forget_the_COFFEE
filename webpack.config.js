@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './frontend/entry',
+  entry: './frontend/entry.js',
   output: {
     path: path.resolve(__dirname, ''),
     filename: 'bundle.js'
@@ -27,9 +27,3 @@ module.exports = {
   },
   devtool: 'source-map'
 };
-
-
-
-
-Package.json 
-    "webpack": "webpack --mode=development --watch"

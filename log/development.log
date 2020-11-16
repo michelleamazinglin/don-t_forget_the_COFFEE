@@ -1,9 +1,0 @@
-Started GET "/" for ::1 at 2020-11-16 14:55:39 -0500
-
-ActiveRecord::NoDatabaseError - FATAL:  database "Dont_forget_the_COFFEE_development" does not exist:
-
-Started POST "/__better_errors/1e4e52e688e2c44a/variables" for ::1 at 2020-11-16 14:55:40 -0500
-  [1m[35m (210.3ms)[0m  [1m[35mCREATE DATABASE "Dont_forget_the_COFFEE_development" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (75.7ms)[0m  [1m[35mCREATE DATABASE "Dont_forget_the_COFFEE_test" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9

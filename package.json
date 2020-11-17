@@ -2,7 +2,7 @@
   "name": "Dont_forget_the_COFFEE",
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
-  "main": "bundle.js",
+  "main": "./frontend/entry.jsx",
   "directories": {
     "lib": "lib",
     "test": "test"

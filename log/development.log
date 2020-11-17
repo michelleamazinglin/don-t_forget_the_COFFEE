@@ -165,3 +165,226 @@ Started GET "/" for ::1 at 2020-11-17 10:30:28 -0500
 ActionController::RoutingError - uninitialized constant StaticPagesController:
 
 Started POST "/__better_errors/e51bb8f7f3d0a250/variables" for ::1 at 2020-11-17 10:30:28 -0500
+Started GET "/" for ::1 at 2020-11-17 10:33:35 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/2bf7072084a84a6a/variables" for ::1 at 2020-11-17 10:33:36 -0500
+Started GET "/" for ::1 at 2020-11-17 10:33:36 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/0decf73a32a16d1b/variables" for ::1 at 2020-11-17 10:33:36 -0500
+Started GET "/" for ::1 at 2020-11-17 10:33:36 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/db1b93e286e6d9ab/variables" for ::1 at 2020-11-17 10:33:36 -0500
+Started GET "/" for ::1 at 2020-11-17 10:33:36 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/567419e90baf69a5/variables" for ::1 at 2020-11-17 10:33:36 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:19 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/e8d3c8b11bd418b9/variables" for ::1 at 2020-11-17 10:34:19 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:19 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/3be998086a07b342/variables" for ::1 at 2020-11-17 10:34:20 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:20 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/ac99cc6bb2e6c23e/variables" for ::1 at 2020-11-17 10:34:20 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:20 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/72944a07bc5ed1c8/variables" for ::1 at 2020-11-17 10:34:20 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:34 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/d5ef09c4f7e94e45/variables" for ::1 at 2020-11-17 10:34:34 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:34 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/8e8d70c13d7e9728/variables" for ::1 at 2020-11-17 10:34:35 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:35 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/99e93ea4435e2bdb/variables" for ::1 at 2020-11-17 10:34:35 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:35 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/d55245b4b6f67ff0/variables" for ::1 at 2020-11-17 10:34:35 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:35 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/788257e9d4a87f1d/variables" for ::1 at 2020-11-17 10:34:35 -0500
+Started GET "/" for ::1 at 2020-11-17 10:34:35 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/6c75a802be7fd41d/variables" for ::1 at 2020-11-17 10:34:35 -0500
+Started GET "/" for ::1 at 2020-11-17 10:37:08 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/38820c8b2387014d/variables" for ::1 at 2020-11-17 10:37:08 -0500
+Started GET "/" for ::1 at 2020-11-17 10:37:09 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/28b71d33306dd315/variables" for ::1 at 2020-11-17 10:37:09 -0500
+Started GET "/" for ::1 at 2020-11-17 10:37:09 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/2bcc533f387c1d99/variables" for ::1 at 2020-11-17 10:37:09 -0500
+Started GET "/" for ::1 at 2020-11-17 10:39:53 -0500
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/5c785eb4d58226ac/variables" for ::1 at 2020-11-17 10:39:53 -0500
+Started GET "/" for ::1 at 2020-11-17 10:40:55 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (130.8ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `logged_in?' for #<#<Class:0x00007fd55222a090>:0x00007fd591af8138>
+Did you mean?  logger?:
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__4284707716183897461_70277091384460'
+
+Started POST "/__better_errors/562767ae84fdd28c/variables" for ::1 at 2020-11-17 10:40:55 -0500
+Started GET "/" for ::1 at 2020-11-17 10:42:09 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered static_pages/root.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 1084ms (Views: 1072.2ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:42:12 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:42:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:43:11 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:43:15 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:48:43 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:49:21 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:49:21 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:50:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:54:24 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:54:25 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:54:26 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:55:29 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:57:55 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 11:00:05 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 11:00:05 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+

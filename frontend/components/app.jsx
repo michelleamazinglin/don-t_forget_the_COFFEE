@@ -1,8 +1,10 @@
 import React from "react";
+import GreetingContainer from './greeting/greeting_container';
 
 const App = () => (
   <div>
-    <h1>Don't forget the COFFEE (from /frontend/components/app.jsx)</h1>
+    <h1>Don't forget the COFFEE</h1>
+    <GreetingContainer />
   </div>
 );
 

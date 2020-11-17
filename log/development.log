@@ -39,3 +39,129 @@ Migrating to CreateUsers (20201116230120)
   ↳ bin/rails:9
   [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/michellelin/.rbenv/versions/2.5.1/bin/annotate:23
+Started GET "/" for ::1 at 2020-11-17 09:43:05 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 09:49:25 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 09:49:28 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 22ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 09:52:04 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 09:52:05 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 09:52:05 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 09:52:06 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michellelin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-17 10:10:03 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/bb5e5fb7dd68533d/variables" for ::1 at 2020-11-17 10:10:03 -0500
+Started GET "/" for ::1 at 2020-11-17 10:22:17 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/47c74640d41ad33d/variables" for ::1 at 2020-11-17 10:22:17 -0500
+Started GET "/" for ::1 at 2020-11-17 10:24:49 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/227902f8098ae6ea/variables" for ::1 at 2020-11-17 10:24:49 -0500
+Started GET "/" for ::1 at 2020-11-17 10:24:50 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/16c9a9d0ccd3eadd/variables" for ::1 at 2020-11-17 10:24:50 -0500
+Started GET "/" for ::1 at 2020-11-17 10:24:50 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/ce3246ccde4cc019/variables" for ::1 at 2020-11-17 10:24:50 -0500
+Started GET "/" for ::1 at 2020-11-17 10:24:50 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/5fce2a249847bf6e/variables" for ::1 at 2020-11-17 10:24:50 -0500
+Started GET "/" for ::1 at 2020-11-17 10:28:00 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/dac2e17ed1f0c232/variables" for ::1 at 2020-11-17 10:28:00 -0500
+Started GET "/" for ::1 at 2020-11-17 10:28:01 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/0b473b14c5d31928/variables" for ::1 at 2020-11-17 10:28:01 -0500
+Started GET "/" for ::1 at 2020-11-17 10:28:01 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/3af0711d3b1eacec/variables" for ::1 at 2020-11-17 10:28:01 -0500
+Started GET "/" for ::1 at 2020-11-17 10:28:01 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/800a75f91bf2c859/variables" for ::1 at 2020-11-17 10:28:01 -0500
+Started GET "/" for ::1 at 2020-11-17 10:28:53 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/a5c4e47f0d459297/variables" for ::1 at 2020-11-17 10:28:54 -0500
+Started GET "/" for ::1 at 2020-11-17 10:29:38 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/1366328e610d4521/variables" for ::1 at 2020-11-17 10:29:38 -0500
+Started GET "/" for ::1 at 2020-11-17 10:29:38 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/929fa1106e1df442/variables" for ::1 at 2020-11-17 10:29:38 -0500
+Started GET "/" for ::1 at 2020-11-17 10:30:27 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/8707b5ba44acac58/variables" for ::1 at 2020-11-17 10:30:27 -0500
+Started GET "/" for ::1 at 2020-11-17 10:30:28 -0500
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+
+Started POST "/__better_errors/e51bb8f7f3d0a250/variables" for ::1 at 2020-11-17 10:30:28 -0500

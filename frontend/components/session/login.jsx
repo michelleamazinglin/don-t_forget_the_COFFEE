@@ -11,11 +11,6 @@ class Login extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-
-  update(field) {
-    return (e) => this.setState({ [field]: e.currentTarget.value });
-  }
-
   handleInput(type) {
     return (e) => {
       this.setState({ [type]: e.target.value });
@@ -28,12 +23,11 @@ class Login extends React.Component {
       .then(() => this.props.history.push('/chirps'));
   }
 
-
   render() {
     // console.log(this.props);
     return (
       <div className="session-form">
-        <h2>Log In!</h2>
+        <h2>Been here before? Welcome back!</h2>
         <form>
           <label>Username:
           <input

@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 import Root from "./components/root";
 import {
   signup,
-  signin,
-  signout
-} from './util/session';
+  login,
+  logout
+} from './actions/session_actions';
+//thunk actions not util
 import configureStore from './store/store'
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
   //testing
-  // window.signup = signup;
-  // window.signin = signin;
-  // window.signout = signout;
-  // window.getState = store.getState;
-  // window.dispatch = store.dispatch; 
+  window.signup = signup;
+  window.login = login;
+  window.logout = logout;
+  window.getState = store.getState;
+  window.dispatch = store.dispatch; 
   //testing end
 
 });

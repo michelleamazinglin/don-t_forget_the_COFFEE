@@ -1,8 +1,35 @@
-body {
-    font-family: sans-serif;
+.header {
+    color: black;
+    text-decoration: none;
 }
 
-.session-form {
-    display: flex;
-    flex-direction: column;
+body {
+    font-family: sans-serif;
+    text-align: center;
 }
+
+.loginpage-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.login-container {
+    display: flex;
+}
+
+.left-half {
+    color: white;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.right-half {
+    color: black;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+

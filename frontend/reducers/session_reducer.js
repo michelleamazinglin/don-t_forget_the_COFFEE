@@ -22,3 +22,4 @@ const sessionReducer = (state = _nullUser, action) => {
 export default sessionReducer;
 
 // store info about user
+// log in

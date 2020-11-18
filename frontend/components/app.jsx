@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Route,
   Redirect,
@@ -15,7 +16,8 @@ const App = () => (
   <div>
     <header>
       <Link to="/" className="header-link">
-        <h1>Don't forget the COFFEE</h1>
+        <img src="../../app/assets/images/LOGO_FSP.png" alt="logo"/>
+        <h1 className="name">Don't forget the COFFEE</h1>
       </Link>
       <GreetingContainer />
     </header>

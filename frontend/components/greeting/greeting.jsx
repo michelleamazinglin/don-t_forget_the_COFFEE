@@ -1,5 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {
+  Route,
+  Redirect,
+  Switch,
+  Link,
+  HashRouter
+} from 'react-router-dom';
+
+import SignUpFormContainer from '../session/signup_container';
+import LogInFormContainer from '../session/login_container';
 
 
 
@@ -11,12 +20,24 @@ const Greeting = ({ currentUser, logout }) => {
           <img src={window.logoUrl} alt="logo" className="logo" width="150" />
           <p>Don't forget<br></br>the COFFEE</p>
         </Link>
+        <nav className="greeting-nav">
+          <Link to="/login">Log in</Link>
+          <Link id="sign-up-button" to="/signup">Sign up for free</Link>
+        </nav>
     </header>
 
-    <nav className="greeting-nav">
-        <Link to="/login">Log in</Link>
-        <Link to="/signup">Sign up for free</Link>
-    </nav>
+    <div className="login-signup-page">
+      <Route path="/login" component={LogInFormContainer} />
+      <Route path="/signup" component={SignUpFormContainer} />
+    </div>
+
+    <footer>
+        <p>© 2020 Don't forget the COFFEE</p>
+        <a href="#">Term</a>
+        <a href="#">Privacy</a>
+        <a href="#">Sercurity</a>
+    </footer>
+
     </>
   );
   const personalGreeting = () => (

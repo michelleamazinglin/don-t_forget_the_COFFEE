@@ -1,46 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #0360BF;
-    height: 110px;
-    border-bottom: 1px solid gray;
-}
-
-.greeting-nav > a {
-    color: white;
-    text-decoration: none;
-    margin: 30px;
-}
-
-.header-link {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-
-}
-
-.header-link > p {
-    margin: 30px;
-    margin-left: 0;
-    color: white;
-}
 
 body {
-    font-family: sans-serif;
     text-align: center;
 }
 
 .login-container {
     display: flex;
     flex-direction: row;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .signup-container {
     display: flex;
     flex-direction: row;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .left-half {
@@ -50,6 +25,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #0360BF;
+    height: 500px;
 }
 
 .right-half {

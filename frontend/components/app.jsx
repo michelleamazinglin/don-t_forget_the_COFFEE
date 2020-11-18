@@ -8,6 +8,7 @@ import {
   HashRouter
 } from 'react-router-dom';
 
+
 import GreetingContainer from './greeting/greeting_container';
 
 const App = () => (

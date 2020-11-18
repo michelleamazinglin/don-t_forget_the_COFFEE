@@ -9,6 +9,7 @@ import {
 
 import SignUpFormContainer from '../session/signup_container';
 import LogInFormContainer from '../session/login_container';
+import { AuthRoute, ProtectedRoute } from '../../util/route_util';
 
 
 
@@ -27,15 +28,16 @@ const Greeting = ({ currentUser, logout }) => {
     </header>
 
     <div className="login-signup-page">
-      <Route path="/login" component={LogInFormContainer} />
-      <Route path="/signup" component={SignUpFormContainer} />
+        <AuthRoute exact path="/login" component={LogInFormContainer} />
+        <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </div>
 
     <footer>
         <p>© 2020 Don't forget the COFFEE</p>
-        <a href="#">Term</a>
-        <a href="#">Privacy</a>
-        <a href="#">Sercurity</a>
+        <div className="footer-icon">
+          <a href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/">Linkedin</a>
+          <a href="https://github.com/michelleamazinglin">Github</a>
+        </div>
     </footer>
 
     </>
@@ -44,6 +46,7 @@ const Greeting = ({ currentUser, logout }) => {
     <div className="header-container">
       <h2 className="header-name">Hi, {currentUser.username}!</h2>
       <button className="header-button" onClick={logout}>Log Out</button>
+      <p>this is the main page</p>
     </div>
   );
 

@@ -40,9 +40,11 @@ class Login extends React.Component {
      
       <section className="login-container">
       <div className="left-half">
-        <div class="session-quote">
+        <div className="session-quote">
           <h2>"Nobody works better under pressure. They just work faster." -Brian Tracy</h2>
+          <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" />
         </div>
+        
       </div>
 
       <div className="right-half">
@@ -67,12 +69,15 @@ class Login extends React.Component {
               placeholder="password"
             />
           </label>
-            <label className="submit-button">
-            <input type="submit" value="Log in" />
+            <label className="session-input">
+            <button>Log In</button>
           </label>
         </form>
-        <button onClick={this.handleDemoSubmit}>DEMO log in </button>
-        
+
+        <div className="session-input">
+          <button onClick={this.handleDemoSubmit}>DEMO log in </button>
+        </div>
+
         </div>
       </div>
       </section>

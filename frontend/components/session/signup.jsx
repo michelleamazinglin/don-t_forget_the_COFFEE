@@ -34,12 +34,16 @@ class Signup extends React.Component {
       <>
         <section className="signup-container">
           <div className="left-half">
-            <p>Join millions of people getting more organized and productive!</p>
+            <div className="session-quote">
+              <h2>Join millions of people getting more organized and productive!</h2>
+              <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" />
+             </div>
           </div>
           <div className="right-half">
-        <h2>Sign up for free.</h2>
+          <div className="session-wrap">
+            <h2>Sign up for free.</h2>
         <form onSubmit={this.handleSubmit}>
-          <label>First Name:
+          <label className="session-input">
               <input
               type="text"
               value={this.state.first_name}
@@ -48,7 +52,7 @@ class Signup extends React.Component {
             />
           </label>
 
-          <label>Last Name:
+          <label className="session-input">
               <input
               type="text"
               value={this.state.last_name}
@@ -57,7 +61,7 @@ class Signup extends React.Component {
             />
           </label>
 
-          <label>Email:
+          <label className="session-input">
               <input
               type="text"
               value={this.state.email}
@@ -66,7 +70,7 @@ class Signup extends React.Component {
             />
           </label>
 
-          <label>Username:
+          <label className="session-input">
             <input
               type="text"
               value={this.state.username}
@@ -75,7 +79,7 @@ class Signup extends React.Component {
             />
           </label>
           
-          <label>Password:
+          <label className="session-input">
             <input
               type="password"
               value={this.state.password}
@@ -84,9 +88,12 @@ class Signup extends React.Component {
             />
           </label>
 
-          <input type="submit" value="Sign up!"/>
+          <label className="session-input">
+            <button>Sign up</button>
+          </label>
 
         </form>
+          </div>
           </div>
       </section>
       </>

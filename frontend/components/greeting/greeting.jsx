@@ -26,17 +26,16 @@ const Greeting = ({ currentUser, logout }) => {
           <Link id="sign-up-button" to="/signup">Sign up for free</Link>
         </nav>
     </header>
-
     <div className="login-signup-page">
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </div>
 
     <footer>
-        <p>© 2020 Don't forget the COFFEE</p>
+        <p>© 2020 Don't forget the COFFEE by Michelle Lin</p>
         <div className="footer-icon">
-          <a href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/">Linkedin</a>
-          <a href="https://github.com/michelleamazinglin">Github</a>
+          <a href="https://github.com/michelleamazinglin"><img src={githubUrl} alt="Github" width="20" /></a>
+          <a href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="20" /></a>
         </div>
     </footer>
 
@@ -51,6 +50,7 @@ const Greeting = ({ currentUser, logout }) => {
   );
 
   return currentUser ? personalGreeting() : sessionLinks();
+
 };
 
 

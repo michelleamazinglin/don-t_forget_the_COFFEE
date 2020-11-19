@@ -42,6 +42,13 @@ header {
 }
 
 footer {
-    position: relative;
-    top: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.footer-icon > a {
+    margin: 4px;
+}
+
+// footer is not showing on greeting page yet

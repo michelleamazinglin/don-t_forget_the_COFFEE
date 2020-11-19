@@ -41,6 +41,22 @@
     color: white;
 }
 
+.greeting-signup-button {
+    background-color: transparent;
+    border: 2px solid #D1E0F3;
+    color: #D1E0F3;
+    border-radius: 5px;
+    text-align: center;
+    width: 145px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.greeting-signup-button:hover {
+    border: 2px solid white;
+    color: white;
+}
+
 footer {
     display: flex;
     justify-content: center;

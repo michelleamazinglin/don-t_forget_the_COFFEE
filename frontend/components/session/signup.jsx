@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  Route,
+  Redirect,
+  Switch,
+  Link,
+  HashRouter
+} from 'react-router-dom';
 
 class Signup extends React.Component {
   constructor(props) {
@@ -34,12 +41,17 @@ class Signup extends React.Component {
       <>
         <section className="signup-container">
           <div className="left-half">
+            <Link to="/" className="session-logo-wrap">
+              <img src={window.logoUrl} alt="logo" width="100px" height="auto" />
+              <p>Don't forget<br></br>the COFFEE</p>
+            </Link>
             <div className="session-quote">
               <h2>Join millions of people getting more organized and productive!</h2>
               <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" />
              </div>
           </div>
           <div className="right-half">
+            <Link to="/login"> <button className="signup-button">Log in</button></Link>
           <div className="session-wrap">
             <h2>Sign up for free.</h2>
         <form onSubmit={this.handleSubmit}>

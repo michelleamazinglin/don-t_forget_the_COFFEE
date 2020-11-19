@@ -23,14 +23,10 @@ const Greeting = ({ currentUser, logout }) => {
         </Link>
         <nav className="greeting-nav">
           <Link to="/login">Log in</Link>
-          <Link id="sign-up-button" to="/signup">Sign up for free</Link>
+          <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button">Sign up for free</button></Link>
         </nav>
     </header>
 
-      {/* <div className="login-signup-page">
-        <AuthRoute exact path="/login" component={LogInFormContainer} />
-        <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      </div> */}
 
     <footer>
         <p>© 2020 Don't forget the COFFEE by Michelle Lin</p>

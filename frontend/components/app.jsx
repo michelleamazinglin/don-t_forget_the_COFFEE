@@ -18,7 +18,7 @@ import Greeting from "./greeting/greeting";
 const App = () => (
   <>
   <Switch>
-     
+      
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
       <AuthRoute path='/' component={Greeting} />

@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  Route,
+  Redirect,
+  Switch,
+  Link,
+  HashRouter
+} from 'react-router-dom';
 
 class Login extends React.Component {
   constructor(props) {
@@ -40,6 +47,10 @@ class Login extends React.Component {
      
       <section className="login-container">
       <div className="left-half">
+            <Link to="/" className="session-logo-wrap">
+              <img src={window.logoUrl} alt="logo" width="100px" height="auto" />
+              <p>Don't forget<br></br>the COFFEE</p>
+            </Link>
         <div className="session-quote">
           <h2>"Nobody works better under pressure. They just work faster." -Brian Tracy</h2>
           <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" />
@@ -48,7 +59,9 @@ class Login extends React.Component {
       </div>
 
       <div className="right-half">
-      <div className="session-wrap">
+            
+          <Link to="/signup"><button className="signup-button">Sign up for free</button></Link>
+        <div className="session-wrap">
         <h2>Been here before? Welcome back!</h2>
         <form onSubmit={this.handleSubmit}>
           

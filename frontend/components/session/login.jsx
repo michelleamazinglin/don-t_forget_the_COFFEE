@@ -40,32 +40,36 @@ class Login extends React.Component {
      
       <section className="login-container">
       <div className="left-half">
-        <h2>"Nobody works better under pressure. They just work faster." -Brian Tracy</h2>
+        <div class="session-quote">
+          <h2>"Nobody works better under pressure. They just work faster." -Brian Tracy</h2>
+        </div>
       </div>
 
       <div className="right-half">
-      <div className="session-form">
+      <div className="session-wrap">
         <h2>Been here before? Welcome back!</h2>
-        <form className="signin-form" onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
           
-          <label>Username:
-          <input
-            type="text"
-            value={this.state.username}
-            onChange={this.update('username')}
-            placeholder="Username"
-          />
+          <label className="session-input">
+            <input
+              type="text"
+              value={this.state.username}
+              onChange={this.update('username')}
+              placeholder="Username"
+            />
           </label>
 
-          <label>Password:
-          <input
-            type="password"
-            value={this.state.password}
-            onChange={this.update('password')}
-            placeholder="password"
-          />
+          <label className="session-input">
+            <input
+              type="password"
+              value={this.state.password}
+              onChange={this.update('password')}
+              placeholder="password"
+            />
           </label>
-          <input type="submit" value="Log in" />
+            <label className="submit-button">
+            <input type="submit" value="Log in" />
+          </label>
         </form>
         <button onClick={this.handleDemoSubmit}>DEMO log in </button>
         

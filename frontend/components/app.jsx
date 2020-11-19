@@ -9,25 +9,21 @@ import {
 } from 'react-router-dom';
 
 
-import GreetingContainer from './greeting/greeting_container';
+
 import SignUpFormContainer from './session/signup_container';
 import LogInFormContainer from './session/login_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Greeting from "./greeting/greeting";
+import Main from "./main/main_container";
 
 const App = () => (
   <>
   <Switch>
-      
+      <AuthRoute exact path='/' component={Greeting} />
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      <AuthRoute path='/' component={Greeting} />
+      <ProtectedRoute exact path='/main' component={Main} />
   </Switch>
-
-    {/* <GreetingContainer /> */}
-
-
-
 
   </>
 );

@@ -29,7 +29,7 @@ class Login extends React.Component {
     e.preventDefault();
 
     this.props.login(this.state)
-      .then((user) => this.props.history.push('/'));
+      .then((user) => this.props.history.push('/main'));
       //redirect
   }
 

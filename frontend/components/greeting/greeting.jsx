@@ -13,8 +13,12 @@ import { AuthRoute, ProtectedRoute } from '../../util/route_util';
 
 
 
-const Greeting = ({ currentUser, logout }) => {
-  const sessionLinks = () => (
+class Greeting extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render () {
+      return(
     <>
     <header className="header">
         <Link to="/" className="header-link">
@@ -23,7 +27,7 @@ const Greeting = ({ currentUser, logout }) => {
         </Link>
         <nav className="greeting-nav">
           <Link to="/login">Log in</Link>
-          <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button">Sign up for free</button></Link>
+              <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button">Sign up for free</button></Link>
         </nav>
     </header>
 
@@ -37,16 +41,15 @@ const Greeting = ({ currentUser, logout }) => {
     </footer>
 
     </>
-  );
-  const personalGreeting = () => (
-    <div className="header-container">
-      <h2 className="header-name">Hi, {currentUser.username}!</h2>
-      <button className="header-button" onClick={logout}>Log Out</button>
-      <p>this is the main page</p>
-    </div>
-  );
-
-  return currentUser ? personalGreeting() : sessionLinks();
+      );
+  };
+  // 
+  //   <div className="header-container">
+  //     <h2 className="header-name">Hi, {currentUser.username}!</h2>
+  //     <button className="header-button" onClick={logout}>Log Out</button>
+  //     <p>this is the main page</p>
+  //   </div>
+  // 
 
 };
 

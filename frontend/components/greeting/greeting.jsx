@@ -16,7 +16,7 @@ import { AuthRoute, ProtectedRoute } from '../../util/route_util';
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <>
-    <header>
+    <header className="header">
         <Link to="/" className="header-link">
           <img src={window.logoUrl} alt="logo" className="logo" width="150" />
           <p>Don't forget<br></br>the COFFEE</p>
@@ -26,10 +26,11 @@ const Greeting = ({ currentUser, logout }) => {
           <Link id="sign-up-button" to="/signup">Sign up for free</Link>
         </nav>
     </header>
-    <div className="login-signup-page">
+
+      {/* <div className="login-signup-page">
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-    </div>
+      </div> */}
 
     <footer>
         <p>© 2020 Don't forget the COFFEE by Michelle Lin</p>

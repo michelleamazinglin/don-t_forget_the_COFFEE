@@ -39,6 +39,6 @@ export const logout = () => dispatch => (
     ))
 );
 
-// export const clearSessionErrors = () => dispatch => {
-//     dispatch(receiveErrors([]));
-// };
+export const clearSessionErrors = () => dispatch => {
+    dispatch(receiveErrors([]));
+};

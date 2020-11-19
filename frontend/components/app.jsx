@@ -15,7 +15,7 @@ import LogInFormContainer from './session/login_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Greeting from "./greeting/greeting";
 import Main from "./main/main_container";
-
+// we need to do container cuz we need the new props
 const App = () => (
   <>
   <Switch>

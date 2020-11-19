@@ -17,6 +17,7 @@ class Login extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemoSubmit = this.handleDemoSubmit.bind(this);
+    this.coffee = this.coffee.bind(this);
   }
 
   update(field) {
@@ -53,6 +54,14 @@ class Login extends React.Component {
     );
   }
 
+  componentWillUnmount() {
+    this.props.clearSessionErrors();
+  }
+
+  coffee() {
+    alert("you found the COFFEE!");
+  }
+
   render() {
     return (
       <>
@@ -65,7 +74,7 @@ class Login extends React.Component {
             </Link>
         <div className="session-quote">
           <h2>"Nobody works better under pressure. They just work faster." -Brian Tracy</h2>
-          <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" />
+          <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" onClick={this.coffee} />
         </div>
         
       </div>

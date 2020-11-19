@@ -83,6 +83,10 @@ body {
   width: 435px;
 }
 
+.session-input > button:hover {
+    background-color: #0075be;
+}
+
 .session-quote {
     position: relative;
     top: 40%;

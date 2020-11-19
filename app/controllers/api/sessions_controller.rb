@@ -6,6 +6,7 @@ class Api::SessionsController < ApplicationController
     )
 
     if @user
+      
       sign_in!(@user)
       render "api/users/show"
     else
@@ -17,7 +18,7 @@ class Api::SessionsController < ApplicationController
     @user = current_user
     if @user
       sign_out!
-      render json: ['Hahahaha you are signed out ;D.']
+      render "api/users/show"
     else
       render json: ["Nobody signed in :D"], status: 404
     end

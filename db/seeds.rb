@@ -12,6 +12,5 @@ demo = User.create(
     first_name: 'Demo',
     last_name: 'User',
     email: 'demouser@gmail.com',
-    password_digest: BCrypt::Password.create('password'),
-    session_token: SecureRandom.base64
+    password: 'password',
 )

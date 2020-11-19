@@ -7,12 +7,6 @@ import {
   HashRouter
 } from 'react-router-dom';
 
-import SignUpFormContainer from '../session/signup_container';
-import LogInFormContainer from '../session/login_container';
-import { AuthRoute, ProtectedRoute } from '../../util/route_util';
-
-
-
 class Greeting extends React.Component {
     constructor(props) {
       super(props);
@@ -31,6 +25,10 @@ class Greeting extends React.Component {
         </nav>
     </header>
 
+    <div className="greeting-page-pics" >
+      <p>The smart to-do app for busy people.</p>
+      <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button">Sign up for free</button></Link>
+    </div>
 
     <footer>
         <p>© 2020 Don't forget the COFFEE by Michelle Lin</p>
@@ -43,13 +41,6 @@ class Greeting extends React.Component {
     </>
       );
   };
-  // 
-  //   <div className="header-container">
-  //     <h2 className="header-name">Hi, {currentUser.username}!</h2>
-  //     <button className="header-button" onClick={logout}>Log Out</button>
-  //     <p>this is the main page</p>
-  //   </div>
-  // 
 
 };
 

@@ -67,4 +67,23 @@ footer {
     margin: 4px;
 }
 
+.greeting-page-pics {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-color: #0360BF;
+}
+
+.greeting-page-pics > p {
+    position: relative;
+    top: 200px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.greeting-page-pics > a {
+    position: relative;
+    top: 200px;
+}
 // footer is not showing on greeting page yet

@@ -20,6 +20,11 @@ class Signup extends React.Component {
     //local state
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.coffee = this.coffee.bind(this);
+  }
+
+  coffee() {
+    alert("you found the COFFEE!");
   }
 
   update(field) {
@@ -31,7 +36,7 @@ class Signup extends React.Component {
   componentWillUnmount() {
     this.props.clearSessionErrors();
   }
-  
+
   handleSubmit(e) {
     e.preventDefault();
     this.props.signup(this.state) 
@@ -63,7 +68,7 @@ class Signup extends React.Component {
             </Link>
             <div className="session-quote">
               <h2>Join millions of people getting more organized and productive!</h2>
-              <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" />
+              <img src={coffeeUrl} alt="coffee" width="100" className="the-coffee" onClick={this.coffee}/>
              </div>
           </div>
           <div className="right-half">

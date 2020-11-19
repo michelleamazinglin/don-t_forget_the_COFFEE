@@ -19,6 +19,10 @@ class User < ApplicationRecord
     attr_reader :password
 
     # need an association here to lists and tasks
+    has_many :lists, 
+        primary_key: :id,
+        foreign_key: :user_id,
+        class_name: "Goal"
 
     after_initialize :ensure_session_token
 

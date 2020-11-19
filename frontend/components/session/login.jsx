@@ -41,6 +41,18 @@ class Login extends React.Component {
     this.props.login(user);
   }
 
+  renderErrors() {
+    return (
+      <ul>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   render() {
     return (
       <>
@@ -63,8 +75,11 @@ class Login extends React.Component {
           <Link to="/signup"><button className="signup-button">Sign up for free</button></Link>
         <div className="session-wrap">
         <h2>Been here before? Welcome back!</h2>
+        <div className="error-message">
+              {this.renderErrors()}
+              </div>
         <form onSubmit={this.handleSubmit}>
-          
+                
           <label className="session-input">
             <input
               type="text"

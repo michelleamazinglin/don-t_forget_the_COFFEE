@@ -1,9 +1,15 @@
 import { connect } from 'react-redux';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { signup, login } from '../../actions/session_actions';
 import Signup from './signup';
 
 
-//doesnt rely on state
+const mapStateToProps = ({ errors }) => {
+  return {
+    errors: errors.session,
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
 
@@ -11,4 +17,4 @@ const mapDispatchToProps = dispatch => ({
   login: user => dispatch(login(user))
 });
 
-export default connect(null, mapDispatchToProps)(Signup);
+export default connect(mapStateToProps, mapDispatchToProps)(Signup);

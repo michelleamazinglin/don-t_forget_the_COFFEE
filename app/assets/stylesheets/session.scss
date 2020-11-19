@@ -91,6 +91,7 @@ body {
     padding: 15px;
     font-size: 20px;
     width: 400px;
+    
 }
 
 .session-input > input:focus {
@@ -116,4 +117,16 @@ body {
 .session-quote {
     position: relative;
     top: 35%;
+}
+
+.error-message > ul {
+    list-style-type: none;
+    text-align: right;
+    background-color: #FCE6DE;
+    border-radius: 5px;
+}
+
+.error-message > ul > li {
+    padding: 10px;
+    text-align: center;
 }

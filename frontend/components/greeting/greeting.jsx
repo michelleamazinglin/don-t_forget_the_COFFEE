@@ -27,7 +27,7 @@ class Greeting extends React.Component {
         </Link>
         <nav className="greeting-nav">
           <Link to="/login">Log in</Link>
-              <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button">Sign up for free</button></Link>
+          <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button">Sign up for free</button></Link>
         </nav>
     </header>
 

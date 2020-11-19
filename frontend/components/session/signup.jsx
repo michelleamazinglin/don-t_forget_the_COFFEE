@@ -35,6 +35,18 @@ class Signup extends React.Component {
       //redirect 
   }
 
+  renderErrors() {
+    return (
+      <ul>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   render() {
     // console.log(this.props);
     return (
@@ -54,6 +66,9 @@ class Signup extends React.Component {
             <Link to="/login"> <button className="signup-button">Log in</button></Link>
           <div className="session-wrap">
             <h2>Sign up for free.</h2>
+            <div className="error-message">
+              {this.renderErrors()}
+            </div>
         <form onSubmit={this.handleSubmit}>
           <label className="session-input">
               <input

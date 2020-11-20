@@ -9,7 +9,9 @@
 #  updated_at :datetime         not null
 #
 class List < ApplicationRecord
-    
+
+    validates :title, presence: true
+
     belongs_to :user,
         primary_key: :id,
         foreign_key: :user_id,

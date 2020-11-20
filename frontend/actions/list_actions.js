@@ -40,6 +40,11 @@ export const createList = list => dispatch => {
         .then(createdList => dispatch(receiveList(createdList)))
 }
 
+export const updateList = list => dispatch => {
+    return APIUtil.updateList(list)
+        .then(updatedList => dispatch(receiveList(updatedList)))
+}
+
 export const deleteList = listId => dispatch => {
     return APIUtil.deleteList(listId)
         .then(() => dispatch(removeList(listId)))

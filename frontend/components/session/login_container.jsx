@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { login, clearSessionErrors } from '../../actions/session_actions';
 import Login from './login';
+import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = ({errors}) => {
   // debugger;

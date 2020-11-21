@@ -7,9 +7,9 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mapStateToProps = (state, ownProps) => ({
     list: {
-        title: 'Edit List',
+        title: '',
     },
-    formType: 'Edit List'
+    formType: 'Rename List'
 });
 
 const mapDispatchToProps = dispatch => {

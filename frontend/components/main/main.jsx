@@ -10,6 +10,7 @@ import {
     HashRouter
 } from 'react-router-dom';
 import Modal from '../modal/modal';
+import ListIndexContainer from '../lists/list_index_container';
 
 class Main extends React.Component {
     constructor(props) {
@@ -34,9 +35,10 @@ class Main extends React.Component {
                 <div className="header-container">
                     <button className="header-button" onClick={this.handleLogout}>Log Out</button>
                     <p>this is the main page</p>
-                    <button onClick={() => this.props.openModal('createList')}>Create List</button>
-                    <button onClick={() => this.props.openModal('editList')}>Edit List</button>
                 </div>
+                <ListIndexContainer />
+                <button onClick={() => this.props.openModal('createList')}>+</button>
+                <button onClick={() => this.props.openModal('editList')}>Rename list</button>
                 
             </>
         );

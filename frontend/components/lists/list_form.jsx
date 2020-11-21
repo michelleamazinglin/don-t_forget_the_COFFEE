@@ -38,15 +38,19 @@ class ListForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
+                <div className="modal-wrap">
                 <h1>{this.props.formType}</h1>
                 {/* {this.renderErrors()} */}
-                <label>
+                <label>Please enter list name:<br></br>
                     <input type="text"
                             value={this.state.title}
                             onChange={this.update('title')}
                             />
                 </label>
-                <input type="submit" value={this.props.formType} />
+                <div className=""></div>
+                <input type="submit" value="Save" />
+                <button onClick={this.props.closeModal}>Cancel</button>
+                </div>
             </form>
         )
     }

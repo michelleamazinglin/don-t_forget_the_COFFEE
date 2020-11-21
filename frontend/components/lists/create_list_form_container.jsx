@@ -7,18 +7,19 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mapStateToProps = state => ({
     list: {
-        title: 'Add List',
+        title: '',
     },
-    formType: 'Create List',
-    errors: state.errors,
+    formType: 'Add a list',
+    errors: errors.list,
 });
 
 const mapDispatchToProps = dispatch => {
     return {
         action: post => dispatch(createList(list)),
+        clearSessionErrors: () => dispatch(clearSessionErrors()),
         otherForm: (
             <button onClick={() => dispatch(openModal('createList'))}>
-                Create list
+                Create a list
             </button>
         ),
         closeModal: () => dispatch(closeModal())

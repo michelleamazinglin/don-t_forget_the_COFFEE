@@ -19,6 +19,7 @@ class CreateListForm extends React.Component {
         const list = this.state;
         this.setState({ title: '' });
         this.props.createList(list);
+        this.props.closeModal();
     }
 
     update(field) {

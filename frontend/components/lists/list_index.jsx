@@ -20,7 +20,7 @@ class ListIndex extends React.Component {
         //deconstruc
         return (
             <>
-            <Modal list={this.props.list} />
+            <Modal list={this.props.list}/>
             <Link to="/" className="list-header-link">
                 <img src={window.logoUrl} alt="logo" className="logo" width="90px"/>
                 <p>Don't forget<br></br>the COFFEE</p>

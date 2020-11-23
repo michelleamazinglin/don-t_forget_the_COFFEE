@@ -19,7 +19,6 @@ import Main from "./main/main_container";
 // we need to do container cuz we need the new props
 const App = () => (
   <>
-
  
   <Switch>
       <AuthRoute exact path='/' component={Greeting} />

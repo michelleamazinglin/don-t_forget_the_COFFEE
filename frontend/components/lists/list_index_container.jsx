@@ -22,7 +22,7 @@ const mapDispatchToProps = dispatch => {
         createList: list => dispatch(createList(list)),
         updateList: list => dispatch(updateList(list)),
         deleteList: listId => dispatch(deleteList(listId)),
-        openModal: modal => dispatch(openModal(modal))
+        openModal: (modal, listId) => dispatch(openModal(modal, listId)),
     };
 };
 

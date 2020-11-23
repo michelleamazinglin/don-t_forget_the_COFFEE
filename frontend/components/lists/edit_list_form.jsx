@@ -5,10 +5,7 @@ class EditListForm extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            id: this.props.editList.id,
-            title: this.props.editList.title,
-        }
+        this.state = this.props.list;
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -19,7 +16,10 @@ class EditListForm extends React.Component {
         const list = this.state;
         const title = this.state.title;
         this.props.editList(list);
+        this.props.closeModal();
+            // .then(() => this.props.closeModal());
         this.setState({ title: '' });
+
         
     }
 

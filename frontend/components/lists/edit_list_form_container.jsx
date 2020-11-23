@@ -6,15 +6,15 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 
 
 
-const mapStateToProps = (state, ownProps) => ({
-    // list: state.entities.lists[ownProps.match.params.listId],
+const mapStateToProps = (state) => ({
+    list: state.entities.lists[state.ui.selectiveList],
 });
 
 const mapDispatchToProps = dispatch => {
     return {
         editList: list => dispatch(updateList(list)),
         fetchList: listId => dispatch(fetchList(listId)),
-        closeModal: () => dispatch(closeModal())
+        closeModal: () => dispatch(closeModal()),
     };
 };
 

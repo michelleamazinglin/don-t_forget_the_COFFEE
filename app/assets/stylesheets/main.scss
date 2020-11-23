@@ -5,3 +5,19 @@
     justify-content: space-between;
     width: 100%;
 }
+
+.header-button {
+    background-color: transparent;
+    color: #D1E0F3;
+    border: 1px solid #D1E0F3;
+    position: relative;
+    top: 8px;
+    right: 20px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.header-button:hover {
+    color: white;
+    border: 1px solid white;
+}

@@ -27,8 +27,7 @@ class Api::ListsController < ApplicationController
 
     # edit a list
     def update
-        @list = current_user.list.find_by(id: params[:id])
-
+        @list = current_user.lists.find_by(id: params[:id])
         if @list.update_attributes(list_params)
             render :show
         else

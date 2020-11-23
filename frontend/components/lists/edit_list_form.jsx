@@ -6,7 +6,8 @@ class EditListForm extends React.Component {
         super(props);
 
         this.state = {
-            title: '',
+            id: this.props.editList.id,
+            title: this.props.editList.title,
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,7 +18,9 @@ class EditListForm extends React.Component {
         e.preventDefault();
         const list = this.state;
         const title = this.state.title;
+        this.props.editList(list);
         this.setState({ title: '' });
+        
     }
 
     update(field) {
@@ -45,15 +48,16 @@ class EditListForm extends React.Component {
                 <div className="modal-wrap">
                     <h1>Edit list</h1>
                     {/* {this.renderErrors()} */}
-                    <label>Please enter list name:<br></br>
+                    <label className="enter-wrap">Please enter list name:<br></br>
                         <input type="text"
                             value={this.state.title}
                             onChange={this.update('title')}
                         />
                     </label>
-                    <div className=""></div>
-                    <input type="submit" value="Save" />
+                <div className="modal-button">
+                    <button onSubmit={this.handleSubmit}>Save</button>
                     <button onClick={this.props.closeModal}>Cancel</button>
+                </div>
                 </div>
             </form>
         )

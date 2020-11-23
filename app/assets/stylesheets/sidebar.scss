@@ -3,6 +3,7 @@
     justify-content: space-between;
     flex-direction: row;
     position: relative;
+    margin-bottom: -35px;
 }
 
 .list-plus > button {
@@ -21,7 +22,8 @@
 
 .list-plus > p {
     position: relative;
-    left: -40px;
+    left: -45px;
+    bottom: 3px;
 }
 
 .list-plus > img {
@@ -35,6 +37,7 @@
     flex-direction: row;
     text-decoration: none;
     font-family: 'VT323', monospace;
+    padding-top: 15px;
 }
 
 .list-header-link > p {
@@ -50,12 +53,22 @@
     background-color: #D7E7F5;
     height: 1000px;
     width: 190px;
+    font-family: 'Mukta', sans-serif;
+
 }
 
 .list-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.list-item:hover {
+    background-color: #C8DCF1;
 }
 
 #list-text {
@@ -80,6 +93,8 @@
     position: relative;
     height: 38px;
 }
+
+
 
 // .list-drop-down {
 //     position: absolute;

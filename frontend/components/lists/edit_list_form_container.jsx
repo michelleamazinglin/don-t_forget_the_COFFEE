@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = dispatch => {
     return {
-        action: list => dispatch(updateList(list)),
+        editList: list => dispatch(updateList(list)),
         fetchList: listId => dispatch(fetchList(listId)),
         closeModal: () => dispatch(closeModal())
     };

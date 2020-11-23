@@ -46,15 +46,16 @@ class CreateListForm extends React.Component {
                 <div className="modal-wrap">
                     <h1>Add a list</h1>
                     {/* {this.renderErrors()} */}
-                    <label>Please enter list name:<br></br>
+                    <label className="enter-wrap">Please enter list name:<br></br>
                         <input type="text"
                             value={this.state.title}
                             onChange={this.update('title')}
                         />
                     </label>
-                    <div className=""></div>
-                    <input type="submit" value="Save" />
-                    <button onClick={this.props.closeModal}>Cancel</button>
+                    <div className="modal-button">
+                        <button onSubmit={this.handleSubmit}>Save</button>
+                        <button onClick={this.props.closeModal}>Cancel</button>
+                    </div>
                 </div>
             </form>
         )

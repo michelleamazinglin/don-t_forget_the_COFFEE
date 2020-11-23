@@ -9,9 +9,10 @@ import {
 } from '../../actions/list_actions';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = state => ({
-    
+    lists: Object.values(state.entities.lists)
 });
 
 const mapDispatchToProps = dispatch => {
@@ -20,7 +21,8 @@ const mapDispatchToProps = dispatch => {
         fetchList: id => dispatch(fetchList(id)),
         createList: list => dispatch(createList(list)),
         updateList: list => dispatch(updateList(list)),
-        deleteList: id => dispatch(deleteList(id)),
+        deleteList: listId => dispatch(deleteList(listId)),
+        openModal: modal => dispatch(openModal(modal))
     };
 };
 

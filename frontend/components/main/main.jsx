@@ -9,14 +9,14 @@ import {
     Link,
     HashRouter
 } from 'react-router-dom';
-import Modal from '../modal/modal';
 import ListIndexContainer from '../lists/list_index_container';
+import Sidebar from '../sidebar/sidebar';
 
 class Main extends React.Component {
     constructor(props) {
         super(props);
 
-    this.handleLogout = this.handleLogout.bind(this);
+        this.handleLogout = this.handleLogout.bind(this);
     } 
 
     handleLogout(e) {
@@ -27,19 +27,19 @@ class Main extends React.Component {
             //redirect
     }
 
-
     render() {
         return (
             <>
-                <Modal />
-                <div className="header-container">
-                    <button className="header-button" onClick={this.handleLogout}>Log Out</button>
-                    <p>this is the main page</p>
+                <header className="main-page-header">
+                    <nav className="main-page-nav">
+                    </nav>
+                    <div className="main-page-header-icon">
+                        <button className="header-button" onClick={this.handleLogout}>Log Out</button>
+                    </div>
+                </header>
+                <Sidebar />
+                <div className="main-page-content">
                 </div>
-                <ListIndexContainer />
-                <button onClick={() => this.props.openModal('createList')}>+</button>
-                <button onClick={() => this.props.openModal('editList')}>Rename list</button>
-                
             </>
         );
     };

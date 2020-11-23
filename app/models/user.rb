@@ -22,7 +22,7 @@ class User < ApplicationRecord
     has_many :lists, 
         primary_key: :id,
         foreign_key: :user_id,
-        class_name: "Goal"
+        class_name: "List"
 
     after_initialize :ensure_session_token
 

@@ -12,13 +12,13 @@ export const fetchList = listId => (
     })
 );
 
-export const createList = list => (
-    $.ajax({
-        method: 'POST',
-        url: '/api/lists/',
-        data: { list: list },
-    })
-);
+export const createList = (list) => {
+    return $.ajax({
+        url: "/api/lists",
+        method: "POST",
+        data: { list },
+    });
+};
 
 export const updateList = list => (
     $.ajax({

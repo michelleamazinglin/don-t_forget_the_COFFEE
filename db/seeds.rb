@@ -14,3 +14,5 @@ demo = User.create(
     email: 'demouser@gmail.com',
     password: 'password',
 )
+
+work = List.create(user_id: demo.id, title: "Word")

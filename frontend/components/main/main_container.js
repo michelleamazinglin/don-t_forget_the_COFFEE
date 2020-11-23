@@ -4,16 +4,16 @@ import Main from './main';
 import { openModal } from '../../actions/modal_actions';
 
 
-const mapStateToProps = ({ session, entities: { users } }) => {
+const mapStateToProps = (state, ownProps) => {
   return {
-    currentUser: users[session.id]
+    currentUser: state.session.currentUser,
   };
 };
 
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  openModal: modal => dispatch(openModal(modal))
+  // openModal: modal => dispatch(openModal(modal))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

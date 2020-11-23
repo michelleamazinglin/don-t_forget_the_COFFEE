@@ -14,6 +14,7 @@ class Api::ListsController < ApplicationController
 
     # create a list
     def create
+        # debugger
         @list = List.new(list_params)
         @list.user_id = current_user.id;
 
@@ -37,7 +38,7 @@ class Api::ListsController < ApplicationController
 
     # delete a list
     def destroy
-        list = current_user.list.find_by(id: params[:id])
+        list = current_user.lists.find_by(id: params[:id])
         list.destroy
         render json: {}
     end

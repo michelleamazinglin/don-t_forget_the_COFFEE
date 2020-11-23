@@ -16,6 +16,9 @@ function Modal({modal, closeModal}) {
     case 'createList':
       component = <CreateListContainer />;
       break;
+    case 'listDrop':
+      component = <ListDropDown />;
+      break;
     default:
       return null;
   }

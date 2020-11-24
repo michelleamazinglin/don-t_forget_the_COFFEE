@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom';
 import ListIndexContainer from '../lists/list_index_container';
 import Sidebar from '../sidebar/sidebar';
+import TaskIndexContainer from '../tasks/task_index_container';
 
 class Main extends React.Component {
     constructor(props) {
@@ -38,6 +39,7 @@ class Main extends React.Component {
                     </div>
                 </header>
                 <Sidebar />
+                <TaskIndexContainer />
                 <div className="main-page-content">
                 </div>
             </>

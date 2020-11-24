@@ -3,7 +3,7 @@ import {
     RECEIVE_LIST,
     REMOVE_LIST,
 } from '../actions/list_actions';
-import merge from 'lodash/merge';
+
 
 const ListsReducer = (oldState = {} , action) => {
     Object.freeze(oldState);

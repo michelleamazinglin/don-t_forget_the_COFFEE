@@ -26745,3 +26745,521 @@ Processing by Api::ListsController#index as JSON
 Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for ::1 at 2020-11-23 22:00:26 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 60ms (Views: 46.4ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-23 22:00:26 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (11.2ms)
+Completed 200 OK in 25ms (Views: 13.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-23 22:06:29 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (2.4ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-11-23 22:11:24 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 319ms (Views: 316.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-23 22:11:24 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (1.9ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-23 23:01:32 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 291ms (Views: 288.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-23 23:02:25 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 311ms (Views: 309.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-11-23 23:04:21 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 414ms (Views: 412.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-11-23 23:06:02 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 287ms (Views: 284.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-11-23 23:06:24 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 301ms (Views: 299.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-23 23:06:24 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (2.5ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-23 23:06:49 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (1.5ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-11-24 09:34:52 -0500
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CFP13GTTvS3fN9UDZ9YjldYU/UH5I4OIltDktH1caGJxR4xNjJFdWkNgGIXeQbGy0naxoW/XtP2tDbz4heGQtw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:47
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demouser@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "demo"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "BmttaSoYMyqfXmMNvlZ2XGL5hWvjXsoKUpcipPHy4HYZNaZM07QzNXQgHMcDiOJX95ea4R2NYNDe1xelaat/5g=="], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47
+  [1m[36mUser Update (5.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "BmttaSoYMyqfXmMNvlZ2XGL5hWvjXsoKUpcipPHy4HYZNaZM07QzNXQgHMcDiOJX95ea4R2NYNDe1xelaat/5g=="], ["updated_at", "2020-11-24 14:34:52.602538"], ["id", 1]]
+  ↳ app/models/user.rb:47
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:47
+  Rendering api/users/show.json.jbuilder
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "lists"."id" FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/users/show.json.jbuilder:2
+  Rendered api/users/show.json.jbuilder (5.6ms)
+Completed 200 OK in 56ms (Views: 14.1ms | ActiveRecord: 13.7ms)
+
+
+Started POST "/api/session" for ::1 at 2020-11-24 09:35:16 -0500
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"demo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "demo"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:47
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demouser@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "demo"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["updated_at", "2020-11-24 14:35:16.663498"], ["id", 1]]
+  ↳ app/models/user.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:47
+  Rendering api/users/show.json.jbuilder
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "lists"."id" FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/users/show.json.jbuilder:2
+  Rendered api/users/show.json.jbuilder (1.5ms)
+Completed 200 OK in 223ms (Views: 8.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 09:35:16 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (3.4ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 10:00:40 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 76ms (Views: 72.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 10:00:40 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (3.5ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/lists" for ::1 at 2020-11-24 10:13:44 -0500
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"title"=>"work"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:21
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:21
+  [1m[36mList Create (3.1ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["title", "work"], ["created_at", "2020-11-24 15:13:44.630457"], ["updated_at", "2020-11-24 15:13:44.630457"]]
+  ↳ app/controllers/api/lists_controller.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:21
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/show.json.jbuilder (0.4ms)
+Completed 200 OK in 30ms (Views: 8.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 10:22:17 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 389ms (Views: 386.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 10:22:27 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 10:22:31 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 339ms (Views: 336.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 10:22:32 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (2.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (5.1ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 10:59:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 316ms (Views: 313.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 11:00:23 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 319ms (Views: 317.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 11:00:23 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (2.4ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 11:02:48 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 310ms (Views: 307.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 11:02:49 -0500
+Processing by Api::ListsController#index as JSON
+Started GET "/api/tasks" for ::1 at 2020-11-24 11:02:49 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (3.3ms)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 1.3ms)
+
+
+Processing by Api::TasksController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `tasks' for #<User:0x00007f83d0fb4e28>:
+  app/controllers/api/tasks_controller.rb:4:in `index'
+
+Started GET "/" for ::1 at 2020-11-24 11:04:12 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 53ms (Views: 32.6ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 11:04:13 -0500
+Started GET "/api/tasks" for ::1 at 2020-11-24 11:04:13 -0500
+Processing by Api::ListsController#index as JSON
+Processing by Api::TasksController#index as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `tasks' for #<User:0x00007f83f0176300>:
+  app/controllers/api/tasks_controller.rb:7:in `index'
+
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (13.9ms)
+Completed 200 OK in 43ms (Views: 14.4ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 11:04:45 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 11:04:45 -0500
+Processing by Api::ListsController#index as JSON
+Started GET "/api/tasks" for ::1 at 2020-11-24 11:04:45 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+Processing by Api::TasksController#index as JSON
+  [1m[36mList Load (1.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  Rendered api/lists/index.json.jbuilder (4.2ms)
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 2.5ms)
+
+
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `tasks' for #<User:0x00007f83a1159f38>:
+  app/controllers/api/tasks_controller.rb:7:in `index'
+
+Started GET "/" for ::1 at 2020-11-24 11:05:49 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 11:05:49 -0500
+Processing by Api::ListsController#index as JSON
+Started GET "/api/tasks" for ::1 at 2020-11-24 11:05:49 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Processing by Api::TasksController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 7.5ms)
+
+
+  [1m[36mList Load (7.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+
+NoMethodError - undefined method `tasks' for #<User:0x00007f83d7bc0ef0>:
+  app/controllers/api/tasks_controller.rb:4:in `index'
+
+  Rendered api/lists/index.json.jbuilder (19.4ms)
+Completed 200 OK in 50ms (Views: 22.6ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 11:35:15 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/tasks" for ::1 at 2020-11-24 11:35:15 -0500
+Started GET "/api/lists" for ::1 at 2020-11-24 11:35:15 -0500
+Processing by Api::TasksController#index as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `tasks' for #<User:0x00007f83d0f0c0c0>:
+  app/controllers/api/tasks_controller.rb:4:in `index'
+
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (3.4ms)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 11:35:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/lists" for ::1 at 2020-11-24 11:35:17 -0500
+Started GET "/api/tasks" for ::1 at 2020-11-24 11:35:17 -0500
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Processing by Api::TasksController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (1.5ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 5.4ms)
+
+
+
+NoMethodError - undefined method `tasks' for #<User:0x00007f84179a8358>:
+  app/controllers/api/tasks_controller.rb:4:in `index'
+
+Started GET "/" for ::1 at 2020-11-24 12:15:49 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/tasks" for ::1 at 2020-11-24 12:15:49 -0500
+Processing by Api::TasksController#index as JSON
+Started GET "/api/lists" for ::1 at 2020-11-24 12:15:49 -0500
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms)
+
+
+
+NoMethodError - undefined method `tasks' for #<User:0x00007f83f7c527b8>:
+  app/controllers/api/tasks_controller.rb:4:in `index'
+
+Processing by Api::ListsController#index as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GKvMB366xbzD6eWChZwONJWPYxIJjJHHF8T4aRzNrjnfvjMQFlk7vGrdo7/EU/Mvy1PYf1g1C/2tJLZZEVA/og=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (2.7ms)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 1.6ms)
+
+

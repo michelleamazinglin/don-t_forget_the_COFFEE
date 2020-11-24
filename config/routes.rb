@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy, :show]
 
     resources :lists, only: [:index, :show, :create, :update, :destroy]
+    resources :tasks, only: [:create, :index, :show, :update, :destroy]
   end
 
   root to: "static_pages#root"

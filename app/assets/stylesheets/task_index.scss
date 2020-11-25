@@ -1,4 +1,54 @@
 .middlebar {
     position: relative;
     margin: 10px;
+    background-color: #FFFFFF;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.create-task-form > input {
+    width: 75%;
+    height: 30px;
+    border: 1px solid #D0D3D6;
+    border-radius: 3px;
+}
+
+.create-task-form > input:focus {
+    border: 1px solid #0360BF;
+    outline: none;
+}
+
+.create-task-form > button {
+    width: 80px;
+    height: 36px;
+    background-color: #009DFF;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 3px;
+    border-radius: 3px;
+}
+
+.task-items {
+    list-style-type: none;
+}
+
+.task-items > li {
+    padding: 5px;
+    border-top: 1px dotted #D0D3D6;
+    position: relative;
+    left: -20px;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task-items > li:hover {
+    background-color: #fff3ce;
+}
+
+.task-items > li > a {
+    text-decoration: none;
+    color: black;
 }

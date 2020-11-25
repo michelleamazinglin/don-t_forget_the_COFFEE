@@ -8,7 +8,7 @@ const taskItem = props => {
     return (
             <>
             <li>
-                <Link to={`${props.url}/${props.task.id}`}>{props.task.body}</Link>
+                <Link to={`app/lists/${props.task.id}`}>{props.task.body}</Link>
                     <button onClick={() => props.deleteTask(props.task.id)}>delete</button>
             </li>
             </>

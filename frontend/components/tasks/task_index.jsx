@@ -17,9 +17,10 @@ class TaskIndex extends React.Component {
         return (
             <>
             <div className="middlebar">
-            <p>this is the task index page</p>
+            <p>Incomplete</p>
+            <p>Completed</p>
             <CreateTaskFormContainer />
-            <ul>
+            <ul className="task-items">
                 
                 {
                     tasks.map(task => <TaskItem

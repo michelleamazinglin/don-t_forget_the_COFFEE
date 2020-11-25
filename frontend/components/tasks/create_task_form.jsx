@@ -27,16 +27,16 @@ class CreateTaskForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <h1>Add a Task</h1>
-                <label>Please enter Task name:<br></br>
+            <>
+            <form onSubmit={this.handleSubmit} className="create-task-form">
                     <input type="text"
                         value={this.state.body}
                         onChange={this.update('body')}
+                        placeholder="Add a task..."
                     />
-                </label>
-                <button onSubmit={this.handleSubmit}>Save</button>
+                <button onSubmit={this.handleSubmit}>Add Task</button>
             </form>
+            </>
         )
     }
 }

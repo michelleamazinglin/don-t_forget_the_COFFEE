@@ -31,6 +31,7 @@ class Main extends React.Component {
     render() {
         return (
             <>
+            <div className="main-page">
                 <header className="main-page-header">
                     <nav className="main-page-nav">
                     </nav>
@@ -44,6 +45,7 @@ class Main extends React.Component {
                         <Route exact path="/app/lists/:listId" component={TaskIndexContainer} />
                     </Switch>
                 </div>
+            </div>
             </>
         );
     };

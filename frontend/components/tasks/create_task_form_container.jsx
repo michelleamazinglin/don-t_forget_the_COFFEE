@@ -6,13 +6,13 @@ import { createTask } from '../../actions/task_actions';
 const mapStateToProps = (state, ownprops) => ({
     task: {
         body: '',
-        list_id: ownprops.match.params.listId,
+        listId: ownprops.match.params.listId,
         completed: false,
     }
 });
 
 const mapDispatchToProps = dispatch => ({
-    createTask: task => dispatch(createTask(task))
+    createTask: (task, listId) => dispatch(createTask(task, listId))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CreateTaskForm));

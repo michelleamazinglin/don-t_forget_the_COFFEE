@@ -9,11 +9,17 @@ class TaskIndex extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchTasks();
+        this.props.fetchTasks(this.props.listId);
+    }
+
+    componentDidUpdate(prevProps) {
+        if(prevProps.listId != this.props.listId) {
+            this.props.fetchTasks(this.props.listId) 
+        } 
     }
 
     render() {
-        const { tasks, deleteTask } = this.props;
+        const { tasks, deleteTask, listId } = this.props;
         return (
             <>
             <div className="middlebar">
@@ -27,6 +33,7 @@ class TaskIndex extends React.Component {
                         task={task}
                         deleteTask={deleteTask}
                         key={`list-${task.id}`}
+                        listId={listId}
                     />
                         )
                             // for each list, render list item

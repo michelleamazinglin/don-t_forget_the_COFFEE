@@ -23,8 +23,10 @@ Rails.application.routes.draw do
     resources :users, only: [:create]
     resource :session, only: [:create, :destroy, :show]
 
-    resources :lists, only: [:index, :show, :create, :update, :destroy]
-    resources :tasks, only: [:create, :index, :show, :update, :destroy]
+    resources :lists, only: [:index, :show, :create, :update, :destroy] do
+      resources :tasks, only: [:create, :index, :show, :update, :destroy]
+    end
+    
   end
 
   root to: "static_pages#root"

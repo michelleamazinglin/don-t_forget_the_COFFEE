@@ -1,12 +1,13 @@
 class Api::TasksController < ApplicationController
 
     def index
-        @tasks = current_user.tasks
+        # debugger
+        @tasks = List.find(params[:list_id]).tasks
         render :index
     end
 
-    def show
-        @task = Task.find(params[:id])
+    def show 
+        @task = List.find(params[:list_id]).Task.find(params[:id])
     end
 
     def create
@@ -31,7 +32,8 @@ class Api::TasksController < ApplicationController
     end
 
     def destroy
-        @task = current_user.tasks.find(params[:id])
+        # debugger
+        @task = List.find(params[:list_id]).tasks.find(params[:id])
         @task.destroy
         render :show
     end

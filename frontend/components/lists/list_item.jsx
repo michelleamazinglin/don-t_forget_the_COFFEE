@@ -10,7 +10,6 @@ const listItem = props => {
         <Modal />
         <li className="list-item">
             <Link to={`/app/lists/${props.list.id}`} id='list-text'>{props.list.title}</Link>
-            {/* <img src={window.arrowUrl} className="arrow-down" width="15px" height="15px" /> */}
             <div className="list-drop-down">
                 <button onClick={() => props.openModal('editList', props.list.id)}>Rename</button>
                 <button onClick={() => props.deleteList(props.list.id)}>delete</button>

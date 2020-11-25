@@ -25,28 +25,29 @@ const removeTask = taskId => {
     }
 };
 
-export const fetchTasks = () => dispatch => {
-    return APIUtil.fetchTasks()
+export const fetchTasks = (listId) => dispatch => {
+    return APIUtil.fetchTasks(listId)
         .then(tasks => dispatch(receiveTasks(tasks)))
+
 }
 
-export const fetchTask = taskId => dispatch => {
-    return APIUtil.fetchTask(taskId)
+export const fetchTask = (listId, taskId) => dispatch => {
+    return APIUtil.fetchTask(listId, taskId)
         .then(task => dispatch(removeTask(task)))
 }
 
-export const createTask = task => dispatch => {
+export const createTask = (task, listId) => dispatch => {
     // debugger
-    return APIUtil.createTask(task)
+    return APIUtil.createTask(task, listId)
         .then(createdTask => dispatch(receiveTask(createdTask)))
 }
 
-export const updateTask = task => dispatch => {
-    return APIUtil.updateTask(task)
+export const updateTask = (task, listId) => dispatch => {
+    return APIUtil.updateTask(task, listId)
         .then(updatedTask => dispatch(receiveTask(updatedTask)))
 }
 
-export const deleteTask = taskId => dispatch => {
-    return APIUtil.deleteTask(taskId)
+export const deleteTask = (taskId, listId) => dispatch => {
+    return APIUtil.deleteTask(taskId, listId)
         .then(() => dispatch(removeTask(taskId)))
 }

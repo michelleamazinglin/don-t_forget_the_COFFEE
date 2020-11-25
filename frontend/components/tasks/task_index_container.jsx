@@ -10,17 +10,25 @@ import {
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-const mapStateToProps = state => ({
-    tasks: Object.values(state.entities.tasks)
-});
+const mapStateToProps = (state, ownProps) => {
+    // debugger
+    const listId = parseInt(ownProps.match.params.listId)
+    return {
+        listId: listId,
+        tasks: Object.values(state.entities.tasks).filter(task => {
+            // debugger
+            return task.listId === listId
+        })
+    };
+};
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchTasks: () => dispatch(fetchTasks()),
+        fetchTasks: (listId) => dispatch(fetchTasks(listId)),
         fetchTask: id => dispatch(fetchTask(id)),
         createTask: task => dispatch(createTask(task)),
         updateTask: task => dispatch(updateTask(task)),
-        deleteTask: taskId => dispatch(deleteTask(taskId)),
+        deleteTask: (taskId, listId) => dispatch(deleteTask(taskId, listId)),
     };
 };
 

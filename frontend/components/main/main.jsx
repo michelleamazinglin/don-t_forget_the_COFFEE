@@ -38,9 +38,11 @@ class Main extends React.Component {
                         <button className="header-button" onClick={this.handleLogout}>Log Out</button>
                     </div>
                 </header>
-                <Sidebar />
-                <TaskIndexContainer />
-                <div className="main-page-content">
+                <div className="main-page-wrap">
+                    <Sidebar />
+                    <Switch>
+                        <Route exact path="/app/lists/:listId" component={TaskIndexContainer} />
+                    </Switch>
                 </div>
             </>
         );

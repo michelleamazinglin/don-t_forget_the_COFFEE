@@ -36,19 +36,14 @@ export const fetchTask = taskId => dispatch => {
 }
 
 export const createTask = task => dispatch => {
+    // debugger
     return APIUtil.createTask(task)
-        .then(createdTask => dispatch(receiveTask(createdTask))),
-        err => (
-            dispatch(receiveErrors(err.responseJSON))
-        )
+        .then(createdTask => dispatch(receiveTask(createdTask)))
 }
 
 export const updateTask = task => dispatch => {
     return APIUtil.updateTask(task)
-        .then(updatedTask => dispatch(receiveTask(updatedTask))),
-        err => (
-            dispatch(receiveErrors(err.responseJSON))
-        )
+        .then(updatedTask => dispatch(receiveTask(updatedTask)))
 }
 
 export const deleteTask = taskId => dispatch => {

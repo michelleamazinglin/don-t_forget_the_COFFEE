@@ -11,6 +11,12 @@ class Api::TasksController < ApplicationController
 
     def create
         @task = Task.new(task_params)
+        @task.list_id = task_params[:list_id]
+        if @task.save
+            render :show
+        else
+            render json: ['invalid, please try again :(']
+        end
     end
 
     def update

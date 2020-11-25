@@ -24,6 +24,10 @@ class User < ApplicationRecord
         foreign_key: :user_id,
         class_name: "List"
 
+    has_many :tasks,
+        through: :lists,
+        source: :tasks
+
     after_initialize :ensure_session_token
 
     def self.find_by_credentials(username, password)

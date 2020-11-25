@@ -3,21 +3,16 @@ import { withRouter, Link } from 'react-router-dom';
 
 
 
-class taskItem extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    
-    render() {
-        return (
+const taskItem = props => {
+
+    return (
             <>
-                <li>
-                    <p>{this.props.tasks}</p>
-                    <button onClick={() => props.deleteTask(this.props.task.id)}>delete</button>
-                </li>
+        
+                <Link to={`${props.url}/${props.task.id}`}>{props.task.body}</Link>
+                    <button onClick={() => props.deleteTask(props.task.id)}>delete</button>
+            
             </>
         )
-    };
-};
+}
 
 export default taskItem;

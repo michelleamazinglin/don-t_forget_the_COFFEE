@@ -3,10 +3,10 @@ import { withRouter } from 'react-router-dom';
 import CreateTaskForm from './create_task_form';
 import { createTask } from '../../actions/task_actions';
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state) => ({
     task: {
         body: '',
-        list_id: ownProps.match.params.listId,
+        list_id: state.entities.lists.id
     }
 });
 

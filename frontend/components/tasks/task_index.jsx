@@ -20,17 +20,17 @@ class TaskIndex extends React.Component {
             <p>this is the task index page</p>
             <CreateTaskFormContainer />
             <ul>
-                <li>
-                        {
-                            tasks.map(task => <TaskItem
-                                task={task}
-                                deleteTask={deleteTask}
-                                key={`list-${task.id}`}
-                            />
-                            )
+                
+                {
+                    tasks.map(task => <TaskItem
+                        task={task}
+                        deleteTask={deleteTask}
+                        key={`list-${task.id}`}
+                    />
+                        )
                             // for each list, render list item
-                        }
-                </li>
+                }
+                
             </ul>
             </div>
             </>

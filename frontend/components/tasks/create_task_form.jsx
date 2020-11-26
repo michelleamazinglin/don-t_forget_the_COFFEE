@@ -28,14 +28,7 @@ class CreateTaskForm extends React.Component {
             this.setState({ [field]: e.currentTarget.value });
         }
     }
-
-    // componentDidUpdate(prevProps) {
-    //     if (prevProps.listId != this.props.listId) {
-    //         this.props.createTasks(this.props.listId)
-    //     }
-    // }
-
-
+    
     render() {
         console.log(this.state.listId)
         console.log(this.props)

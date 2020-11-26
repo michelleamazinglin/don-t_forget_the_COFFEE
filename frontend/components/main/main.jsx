@@ -2,6 +2,7 @@ import React from 'react';
 import CreateListContainer from '../lists/create_list_form_container';
 import EditListContainer from '../lists/edit_list_form_container';
 import { AuthRoute, ProtectedRoute } from '../../util/route_util';
+
 import {
     Route,
     Redirect,
@@ -36,6 +37,10 @@ class Main extends React.Component {
                     <nav className="main-page-nav">
                     </nav>
                     <div className="main-page-header-icon">
+                        <a href="https://github.com/michelleamazinglin"><img src={githubUrl} alt="Github" width="25" /></a>
+                        <a href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="25" /></a>
+                    </div>
+                    <div className="main-page-header-logout">
                         <button className="header-button" onClick={this.handleLogout}>Log Out</button>
                     </div>
                 </header>

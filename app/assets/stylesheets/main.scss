@@ -13,17 +13,29 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    background-color: #0360BF;
+    position: relative;
+    height: 38px;
 }
+
+.main-page-header-icon > a{
+    margin: 5px;
+    position: relative;
+    top: 6px;
+    left: 330px;
+}
+
 
 .header-button {
     background-color: transparent;
     color: #D1E0F3;
     border: 1px solid #D1E0F3;
     position: relative;
-    top: 8px;
+    top: 7px;
     right: 20px;
     padding: 3px;
     border-radius: 3px;
+    height: 25px;
 }
 
 .header-button:hover {

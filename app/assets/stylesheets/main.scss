@@ -22,7 +22,6 @@
     margin: 5px;
     position: relative;
     top: 6px;
-    left: 330px;
 }
 
 
@@ -41,4 +40,43 @@
 .header-button:hover {
     color: white;
     border: 1px solid white;
+}
+
+.list-summary-fake {
+    position: relative;
+    left: -20px;
+    margin: 10px;
+    width: 40%;
+    background-color: #E4EEF8;
+    border-radius: 5px;
+    
+}
+
+.list-summary-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-summary-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: #DAE8F6;
+    position: relative;
+    left: 20px;
+    width: 80px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.list-summary-item > p {
+    margin: 0px;
+}
+
+.list-summary-fake > h3 {
+    position: relative;
+    
+    margin: 5px;
 }

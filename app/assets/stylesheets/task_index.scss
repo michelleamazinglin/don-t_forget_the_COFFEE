@@ -35,20 +35,36 @@
 
 .task-items > li {
     padding: 5px;
-    border-top: 1px dotted #D0D3D6;
+    border-bottom: 1px dotted #D0D3D6;
     position: relative;
     left: -20px;
-    width: 97%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.task-items > li:first-child {
+    border-top: 1px dotted #D0D3D6;
 }
 
 .task-items > li:hover {
     background-color: #fff3ce;
 }
 
-.task-items > li > a {
+.task-items > li > div > a {
     text-decoration: none;
     color: black;
+}
+
+.task-item > button {
+    background-color: transparent;
+    border: 1px solid #79B2E0;
+    color: #79B2E0;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: row;
 }

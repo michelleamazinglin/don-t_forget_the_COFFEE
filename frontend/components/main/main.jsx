@@ -1,6 +1,7 @@
 import React from 'react';
 import CreateListContainer from '../lists/create_list_form_container';
 import EditListContainer from '../lists/edit_list_form_container';
+import TaskShowContainer from '../tasks/task_show_container'
 import { AuthRoute, ProtectedRoute } from '../../util/route_util';
 
 import {
@@ -11,7 +12,7 @@ import {
     HashRouter
 } from 'react-router-dom';
 import ListIndexContainer from '../lists/list_index_container';
-import Sidebar from '../sidebar/sidebar';
+import Sidebar from './main_page_content/sidebar';
 import TaskIndexContainer from '../tasks/task_index_container';
 
 class Main extends React.Component {
@@ -49,6 +50,31 @@ class Main extends React.Component {
                     <Switch>
                         <Route exact path="/app/lists/:listId" component={TaskIndexContainer} />
                     </Switch>
+
+                    <Switch>
+                        <Route exact path="/app/lists/:listId/:taskId" component={TaskShowContainer} />
+                    </Switch>
+                    <div className="list-summary-fake">
+                            <h3>All Tasks</h3>
+                            <div className="list-summary-content">
+                            <div className="list-summary-item">
+                                <p>25</p>
+                                <p>tasks</p>
+                            </div>
+                            <div className="list-summary-item">
+                                <p>2hr</p>
+                                <p>estimated</p>
+                            </div>
+                            <div className="list-summary-item">
+                                <p>1</p>
+                                <p>overdue</p>
+                            </div>
+                            <div className="list-summary-item">
+                                <p>4</p>
+                                <p>completed</p>
+                            </div>
+                            </div>
+                    </div>
                 </div>
             </div>
             </>

@@ -30,8 +30,6 @@ class CreateTaskForm extends React.Component {
     }
     
     render() {
-        console.log(this.state.listId)
-        console.log(this.props)
         return (
             <>
             <form onSubmit={this.handleSubmit} className="create-task-form">

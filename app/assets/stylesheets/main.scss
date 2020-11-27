@@ -77,6 +77,32 @@
 
 .list-summary-fake > h3 {
     position: relative;
-    
     margin: 5px;
+}
+
+.coffee {
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}
+
+.coffee-talk {
+    margin-top: 100px;
+    background-color: #FFFABF;
+    width: 150px;
+    position: relative;
+    left: 20px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.arrow-down-1 {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FFFABF;
+  position: relative;
+  left: 85px;
+  top: -16px;
 }

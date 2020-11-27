@@ -27,7 +27,12 @@ class Greeting extends React.Component {
 
     <div className="greeting-page-pics" >
       <p>The smart to-do app for busy people.</p>
-      <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button">Sign up for free</button></Link>
+      <Link id="sign-up-button" to="/signup"><button className="greeting-signup-button-1">Sign up for free</button></Link>
+      <div className="michelle-andrew-say">       
+        <p><img src={window.andrewUrl} />pick up the COFFEE tomorrow.</p>
+        <p><img src={window.michelleUrl} />bring MiuMiu to vet at 5pm on Monday.</p>
+      </div>
+      <img src={window.mainPageShoppingUrl} alt="shopping"/>
     </div>
 
     <footer>

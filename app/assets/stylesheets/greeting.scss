@@ -71,21 +71,61 @@ footer {
 
 .greeting-page-pics {
     position: relative;
-    height: 600px;
+    height: 900px;
     width: 100%;
     background-color: #0360BF;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .greeting-page-pics > p {
     position: relative;
-    top: 200px;
+    top: 120px;
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
 }
 
 .greeting-page-pics > a {
     position: relative;
-    top: 200px;
+    top: 100px;
 }
-// footer is not showing on greeting page yet
+
+.greeting-page-pics > img {
+    position: relative;
+    top: 130px;
+    width: 700px;
+}
+
+.michelle-andrew-say {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 148px;
+    justify-content: space-evenly;
+}
+
+.michelle-andrew-say > p {
+    background-color: #F7F6FB;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 1px 3px #2F83D9;
+    font-size: 16px;
+}
+
+.greeting-signup-button-1 {
+    background-color: #D24B05;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid grey;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.greeting-signup-button-1:hover {
+    background-color: #b94003;
+}

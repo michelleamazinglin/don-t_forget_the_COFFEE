@@ -33,7 +33,8 @@ class Api::TasksController < ApplicationController
 
     def destroy
         # debugger
-        @task = List.find(params[:list_id]).tasks.find(params[:id])
+        # @task = List.find(params[:list_id]).tasks.find(params[:id])
+        @task = Task.find(params[:id])
         @task.destroy
         render :show
     end

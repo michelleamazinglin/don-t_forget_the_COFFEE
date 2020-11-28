@@ -7,14 +7,14 @@ class TaskShow extends React.Component {
         super(props);
 
         this.state = {
-            id: '',
             body: '',
-            completed: '',
-            listId: '',
+            completed: false,
+            listId: this.props.listId,
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.lists = this.lists.bind(this);
         this.update = this.update.bind(this);
+        this.deleteTask = this.deleteTask.bind(this);
     }
 
     lists() {
@@ -41,6 +41,11 @@ class TaskShow extends React.Component {
         this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
     }
 
+    deleteTask() {
+        this.props.deleteTask(this.props.currentTask.id, this.props.listId);
+        this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+    }
+
     render() {
         return (  
             <>
@@ -57,6 +62,8 @@ class TaskShow extends React.Component {
                         {this.lists()}
                         </select>
                     </label>
+                    <input type="submit" className="edit-task"  defaultValue="Save" />
+                    <input type="button" className="delete-task" onClick={this.deleteTask} defaultValue="Delete" />
                 </form>
             </div>
 

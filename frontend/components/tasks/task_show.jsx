@@ -52,7 +52,6 @@ class TaskShow extends React.Component {
             
             <div className="task-show-page">
                 <span onClick={this.handleSubmit} className="close">close X</span>
-                <p>this is the task show page</p>
                 <p>{this.state.body}</p>
                 <form onSubmit={this.handleSubmit}>
                     <input onChange={this.update('body')} type="text" value={this.state.body} placeholder={this.state.body} />

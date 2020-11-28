@@ -10,7 +10,7 @@ class TaskShow extends React.Component {
     render() {
         return (  
             <>
-            {/* <TaskIndexContainer/>  */}
+            
             <div className="task-show-page">
                 <p>this is the task show page</p>
             </div>

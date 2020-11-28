@@ -14,6 +14,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
     return {
+        fetchTasks: (listId) => dispatch(fetchTasks(listId)),
         updateTask: (task, listId) => dispatch(updateTask(task, listId)),
         deleteTask: (taskId, listId) => dispatch(deleteTask(taskId, listId)),
     };

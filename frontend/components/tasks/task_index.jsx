@@ -23,23 +23,25 @@ class TaskIndex extends React.Component {
         return (
             <>
             <div className="middlebar">
-            <p>Incomplete</p>
-            <p>Completed</p>
-            <CreateTaskFormContainer />
-            <ul className="task-items">
-                
-                {
-                    tasks.map(task => <TaskItem
-                        task={task}
-                        deleteTask={deleteTask}
-                        key={`list-${task.id}`}
-                        listId={listId}
-                    />
-                        )
-                            // for each list, render list item
-                }
-                
-            </ul>
+                <div className="completed">
+                    <p>Incomplete</p>
+                    <p>Completed</p>
+                </div>
+                <CreateTaskFormContainer />
+                <ul className="task-items">
+                    
+                    {
+                        tasks.map(task => <TaskItem
+                            task={task}
+                            deleteTask={deleteTask}
+                            key={`list-${task.id}`}
+                            listId={listId}
+                        />
+                            )
+                                // for each list, render list item
+                    }
+                    
+                </ul>
             </div>
             </>
         )

@@ -6,6 +6,11 @@
     border-radius: 5px;
 }
 
+.create-task-form {
+    position: relative;
+    top: 10px;
+}
+
 .create-task-form > input {
     width: 75%;
     height: 30px;
@@ -67,4 +72,29 @@
 .task-item {
     display: flex;
     flex-direction: row;
+}
+
+.completed {
+    display: flex;
+    flex-direction: row; 
+    position: relative;
+    top: 10px;
+    height: 60px;
+    left: 20px;
+}
+
+.completed > p {
+    padding: 10px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.completed > p:first-child {
+    border-right: 1px dotted grey;
+    border-top: 1px dotted grey;
+    border-left: 1px dotted grey;
 }

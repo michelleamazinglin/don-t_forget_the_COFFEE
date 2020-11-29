@@ -106,7 +106,7 @@ class Login extends React.Component {
               placeholder="password"
             />
           </label>
-            <label className="session-input">
+          <label className="session-input">
             <button>Log In</button>
           </label>
         </form>

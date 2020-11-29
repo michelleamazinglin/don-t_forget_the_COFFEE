@@ -52,7 +52,7 @@ class TaskShow extends React.Component {
             
             <div className="task-show-page">
                 <div className="task-show-close">
-                    <span onClick={this.handleSubmit}>Back to All Tasks</span>
+                    <span onClick={this.handleSubmit}>All Tasks</span>
                     <span onClick={this.handleSubmit}>close X</span>    
                 </div>
                 <form onSubmit={this.handleSubmit} className="task-edit-form">

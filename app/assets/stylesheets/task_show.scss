@@ -6,3 +6,60 @@
     border-radius: 5px;
 }
 
+.task-show-close {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    width: 95%;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+
+.task-edit-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.task-edit-button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.task-edit-body {
+    position: relative;
+    left: 9px;
+    width: 87%;
+    height: 26px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.task-edit-body:focus {
+    border: 1px solid #0360BF;
+    outline-style: none;
+}
+
+.task-edit-list {
+    position: relative;
+    left: 30px;
+    margin-top: 10px;
+}
+
+.task-edit-list > select {
+    height: 28px;
+    width: 86px;
+}
+
+
+
+.task-edit-list > select:focus {
+    border: 1px solid #0360BF;
+    outline-style: none;
+}

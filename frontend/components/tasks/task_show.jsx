@@ -51,18 +51,22 @@ class TaskShow extends React.Component {
             <>
             
             <div className="task-show-page">
-                <span onClick={this.handleSubmit} className="close">close X</span>
-                <p>{this.state.body}</p>
-                <form onSubmit={this.handleSubmit}>
-                    <input onChange={this.update('body')} type="text" value={this.state.body} placeholder={this.state.body} />
-                    <label className="list">list
+                <div className="task-show-close">
+                    <span onClick={this.handleSubmit}>Back to All Tasks</span>
+                    <span onClick={this.handleSubmit}>close X</span>    
+                </div>
+                <form onSubmit={this.handleSubmit} className="task-edit-form">
+                    <input className="task-edit-body" onChange={this.update('body')} type="text" value={this.state.body} placeholder="title" />
+                    <label className="task-edit-list">list
                         <select value={this.state.listId} onChange={this.update('listId')}>
                         <option value={0}>Add field</option>
                         {this.lists()}
                         </select>
                     </label>
-                    <input type="submit" className="edit-task"  defaultValue="Save" />
-                    <input type="button" className="delete-task" onClick={this.deleteTask} defaultValue="Delete" />
+                    <div className="task-edit-button">
+                        <input type="submit" className="edit-task"  defaultValue="Save" />
+                        <input type="button" className="delete-task" onClick={this.deleteTask} defaultValue="Delete" />
+                    </div>
                 </form>
             </div>
 

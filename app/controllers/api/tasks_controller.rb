@@ -21,15 +21,14 @@ class Api::TasksController < ApplicationController
         end
     end
 
-    def update
-        @task = current_user.tasks.find_by(id: params[:id])
-
-        if @task.update_attributes(task_params)
-            render :show
-        else
-            render json: ['invalid, please try again :(']
-        end
+  def update
+    @task = Task.find(params[:id])
+    if @task.update(task_params)
+      render json: @task
+    else
+      render json: @task.errors.full_messages, status: 422
     end
+  end
 
     def destroy
         # debugger

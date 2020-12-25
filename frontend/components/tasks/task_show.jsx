@@ -6,11 +6,13 @@ class TaskShow extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            body: '',
-            completed: false,
-            listId: this.props.listId,
-        }
+        // this.state = {
+        //     body: '',
+        //     completed: false,
+        //     listId: this.props.listId,
+        // }
+        this.state = this.props.currentTask;
+
         this.handleSubmit = this.handleSubmit.bind(this);
         this.lists = this.lists.bind(this);
         this.update = this.update.bind(this);
@@ -59,7 +61,6 @@ class TaskShow extends React.Component {
                     <input className="task-edit-body" onChange={this.update('body')} type="text" value={this.state.body} placeholder="title" />
                     <label className="task-edit-list">list
                         <select value={this.state.listId} onChange={this.update('listId')}>
-                        <option value={0}>Add field</option>
                         {this.lists()}
                         </select>
                     </label>

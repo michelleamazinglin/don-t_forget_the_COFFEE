@@ -18,7 +18,7 @@ class TaskShow extends React.Component {
         this.update = this.update.bind(this);
         this.deleteTask = this.deleteTask.bind(this);
     }
-
+    // 这里或者上面的submit有问题，listId在submit的时候没有改变
     lists() {
         return this.props.lists.map(list => {
             return (

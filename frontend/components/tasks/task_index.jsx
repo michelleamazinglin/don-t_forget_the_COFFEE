@@ -19,7 +19,18 @@ class TaskIndex extends React.Component {
     }
 
     render() {
+        const time = (a, b) => {
+            if (a.update_at < b.update_at) {
+                return 1;
+            } else {
+                return -1;
+            }
+        };
+
         const { tasks, deleteTask, listId } = this.props;
+
+        const SortedTask = tasks.sort(time)
+
         return (
             <>
             <div className="middlebar">
@@ -31,7 +42,7 @@ class TaskIndex extends React.Component {
                 <ul className="task-items">
                     
                     {
-                        tasks.map(task => <TaskItem
+                        SortedTask.map(task => <TaskItem
                             task={task}
                             deleteTask={deleteTask}
                             key={`list-${task.id}`}

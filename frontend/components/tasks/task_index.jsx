@@ -29,7 +29,7 @@ class TaskIndex extends React.Component {
 
         const { tasks, deleteTask, listId } = this.props;
 
-        const SortedTask = tasks.sort(time)
+        const SortedTasks = tasks.sort(time)
 
         return (
             <>
@@ -42,7 +42,7 @@ class TaskIndex extends React.Component {
                 <ul className="task-items">
                     
                     {
-                        SortedTask.map(task => <TaskItem
+                        SortedTasks.map(task => <TaskItem
                             task={task}
                             deleteTask={deleteTask}
                             key={`list-${task.id}`}

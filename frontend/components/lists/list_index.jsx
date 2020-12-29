@@ -21,7 +21,19 @@ class ListIndex extends React.Component {
 
 
     render() {
+
+        const time = (a, b) => {
+            if (a.update_at < b.update_at) {
+                return 1;
+            } else {
+                return -1;
+            }
+        };
+
         const { lists, deleteList ,updateList, openModal } = this.props;
+
+        const SortedLists = lists.sort(time)
+
         //deconstruc
         return (
             <>
@@ -35,7 +47,7 @@ class ListIndex extends React.Component {
 
                 <ul className="list-ul">
                     {
-                        lists.map(list => <ListItem
+                        SortedLists.map(list => <ListItem
                             list={list}
                             deleteList={deleteList}
                             key={list.id}

@@ -76,6 +76,12 @@
     color: black;
 }
 
+#list-text:focus {
+    color: #0360BF;
+    font-weight: bolder;
+    letter-spacing: 0.2px;
+}
+
 .list-drop-down > button {
     background-color: transparent;
     border: 1px solid #79B2E0;

@@ -5,12 +5,7 @@ class CreateTaskForm extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            body: '',
-            task: this.props.task,
-            listId: this.props.task.listId,
-            completed: false
-        }
+        this.state = this.props.task;
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }

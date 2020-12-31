@@ -6,11 +6,6 @@ class TaskShow extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //     body: '',
-        //     completed: false,
-        //     listId: this.props.listId,
-        // }
         this.state = this.props.currentTask;
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,8 +34,18 @@ class TaskShow extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const task = this.state;
-        this.props.updateTask(task, this.props.listId);
-        this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+        this.props.updateTask(task, this.props.listId).then((action) => {
+            this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+        });
+        
+    }
+
+    handleUpdateComplete(e) {
+        const newState = Object.assign({}, this.state, {completed: e.target.checked});
+
+        this.props.updateTask(newState).then((action) => {
+            this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+        });
     }
 
     deleteTask() {

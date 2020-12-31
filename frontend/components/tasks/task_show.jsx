@@ -45,7 +45,7 @@ class TaskShow extends React.Component {
 
         this.props.updateTask(newState).then((action) => {
             this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
-        });
+        });3
     }
 
     deleteTask() {

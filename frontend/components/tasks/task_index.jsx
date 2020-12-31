@@ -34,10 +34,7 @@ class TaskIndex extends React.Component {
         return (
             <>
             <div className="middlebar">
-                <div className="completed">
-                    <p>Incomplete</p>
-                    <p>Completed</p>
-                </div>
+               
                 <CreateTaskFormContainer />
                 <ul className="task-items">
                     

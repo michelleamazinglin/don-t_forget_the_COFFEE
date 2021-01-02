@@ -40,6 +40,7 @@ class TaskIndex extends React.Component {
             <>
             <div className="middlebar">
                <p>{TasksNum}</p>
+               <p> tasks </p>
                 <CreateTaskFormContainer />
                 <ul className="task-items">
                     

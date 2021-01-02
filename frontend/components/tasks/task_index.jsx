@@ -1,7 +1,8 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import TaskItem from './task_item';
-import CreateTaskFormContainer from './create_task_form_container'
+import CreateTaskFormContainer from './create_task_form_container';
+
 
 class TaskIndex extends React.Component {
     constructor(props) {

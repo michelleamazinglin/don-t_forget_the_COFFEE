@@ -3,6 +3,7 @@ import CreateListContainer from '../lists/create_list_form_container';
 import EditListContainer from '../lists/edit_list_form_container';
 import TaskShowContainer from '../tasks/task_show_container'
 import { AuthRoute, ProtectedRoute } from '../../util/route_util';
+import ListSummaryContainer from '../lists/list_summary_container';
 
 import {
     Route,
@@ -52,7 +53,9 @@ class Main extends React.Component {
                     <Switch>
                         <Route exact path="/app/lists/:listId/:taskId" component={TaskShowContainer} />
                     </Switch>
-                    <div className="list-summary-fake">
+                    <ListSummaryContainer />
+                    
+                    {/* <div className="list-summary-fake">
                             <h3>All Tasks</h3>
                             <div className="list-summary-content">
                             <div className="list-summary-item">
@@ -72,7 +75,7 @@ class Main extends React.Component {
                                 <p>completed</p>
                             </div>
                             </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             </>

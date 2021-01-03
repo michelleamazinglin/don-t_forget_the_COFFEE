@@ -30,17 +30,15 @@ class TaskIndex extends React.Component {
             }
         };
 
-        const { tasks, deleteTask, listId } = this.props;
+        const { tasks, deleteTask, listId, list } = this.props;
 
         const SortedTasks = tasks.sort(time);
 
         const TasksNum = tasks.length;
-
+        // debugger
         return (
             <>
             <div className="middlebar">
-               <p>{TasksNum}</p>
-               <p> tasks </p>
                 <CreateTaskFormContainer />
                 <ul className="task-items">
                     
@@ -54,9 +52,15 @@ class TaskIndex extends React.Component {
                             )
                                 // for each list, render list item
                     }
-                    
+
                 </ul>
             </div>
+            <div>
+                <p>{list.title}</p>
+                <p>{TasksNum}</p>
+                <p> tasks </p>  
+            </div>
+
             </>
         )
     }

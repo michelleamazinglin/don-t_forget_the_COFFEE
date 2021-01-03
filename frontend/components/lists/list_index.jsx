@@ -31,7 +31,7 @@ class ListIndex extends React.Component {
         };
 
         const { lists, deleteList ,updateList, openModal } = this.props;
-
+        // debugger
         const SortedLists = lists.sort(time)
 
         //deconstruc

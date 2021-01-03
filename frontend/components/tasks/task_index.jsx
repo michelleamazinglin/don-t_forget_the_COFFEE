@@ -55,11 +55,16 @@ class TaskIndex extends React.Component {
 
                 </ul>
             </div>
-            <div>
-                <p>{list.title}</p>
-                <p>{TasksNum}</p>
-                <p> tasks </p>  
-            </div>
+            <div className="list-summary-fake">
+                <h3>{list.title}</h3>
+                    <div className="list-summary-content">
+                        <div className="list-summary-item">
+                            <p>{TasksNum}</p>
+                            <p> tasks </p>  
+                        </div>
+                    </div>
+             </div>
+        
 
             </>
         )

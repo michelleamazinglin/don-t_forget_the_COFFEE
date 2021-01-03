@@ -53,27 +53,7 @@ class Main extends React.Component {
                         <Route exact path="/app/lists/:listId/:taskId" component={TaskShowContainer} />
                     </Switch>
                     
-                    {/* <div className="list-summary-fake">
-                            <h3>All Tasks</h3>
-                            <div className="list-summary-content">
-                            <div className="list-summary-item">
-                                <p>25</p>
-                                <p>tasks</p>
-                            </div>
-                            <div className="list-summary-item">
-                                <p>2hr</p>
-                                <p>estimated</p>
-                            </div>
-                            <div className="list-summary-item">
-                                <p>1</p>
-                                <p>overdue</p>
-                            </div>
-                            <div className="list-summary-item">
-                                <p>4</p>
-                                <p>completed</p>
-                            </div>
-                            </div>
-                    </div> */}
+                   
                 </div>
             </div>
             </>

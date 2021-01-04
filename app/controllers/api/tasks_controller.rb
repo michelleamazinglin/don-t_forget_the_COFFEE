@@ -21,14 +21,14 @@ class Api::TasksController < ApplicationController
         end
     end
 
-  def update
-    @task = Task.find(params[:id])
-    if @task.update(task_params)
-      render json: @task
-    else
-      render json: @task.errors.full_messages, status: 422
+    def update
+      @task = Task.find(params[:id])
+      if @task.update(task_params)
+        render json: @task
+      else
+        render json: @task.errors.full_messages, status: 422
+      end
     end
-  end
 
     def destroy
         # debugger

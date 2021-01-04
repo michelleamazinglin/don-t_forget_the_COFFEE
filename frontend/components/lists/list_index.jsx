@@ -41,7 +41,7 @@ class ListIndex extends React.Component {
 
             <div className="list-plus">
                 <img src={window.arrowUrl} className="arrow-down" width="15px" height="15px" />
-                <p>Lists</p>
+                <Link to={`/app/all`} className="all-lists">Lists</Link>
                 <button onClick={() => this.props.openModal('createList')}>+</button>
             </div>
 

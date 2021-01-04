@@ -15,13 +15,10 @@ const mapStateToProps = (state, ownProps) => {
     const showCompleted = state.ui.showCompleted;
     const listId = parseInt(ownProps.match.params.listId);
     // debugger
-    console.log(state, ownProps)
+    // console.log(state, ownProps)
     return {
         listId: listId,
-        tasks: Object.values(state.entities.tasks).filter(task => {
-            // debugger
-            return task.listId === listId
-        }),
+        tasks: Object.values(state.entities.tasks),
         showCompleted: showCompleted,
         list: state.entities.lists[listId] || {id: 0, userId: 0, title: ''},
     };

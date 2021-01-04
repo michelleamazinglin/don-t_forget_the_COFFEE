@@ -14,6 +14,8 @@ import {
 import ListIndexContainer from '../lists/list_index_container';
 import Sidebar from './main_page_content/sidebar';
 import TaskIndexContainer from '../tasks/task_index_container';
+import AllTaskContainer from '../tasks/all_task_container';
+import SearchContainer from '../search/search_container';
 
 class Main extends React.Component {
     constructor(props) {
@@ -45,6 +47,10 @@ class Main extends React.Component {
                 </header>
                 <div className="main-page-wrap">
                     <Sidebar />
+                    <Switch>
+                        <Route path="/app/all" component={AllTaskContainer} />
+                    </Switch>
+
                     <Switch>
                         <Route exact path="/app/lists/:listId" component={TaskIndexContainer} />
                     </Switch>

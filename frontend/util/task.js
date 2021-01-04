@@ -5,6 +5,13 @@ export const fetchTasks = (listId) => (
     })
 );
 
+export const fetchAllTasks = () => (
+    $.ajax({
+        method: 'GET',
+        url: `/api/tasks`,
+    })
+);
+
 
 export const fetchTask = ( listId, taskId ) => (
     $.ajax({

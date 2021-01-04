@@ -25,6 +25,12 @@ const removeTask = taskId => {
     }
 };
 
+export const fetchAllTasks = () => dispatch => {
+    return APIUtil.fetchTasks()
+        .then(tasks => dispatch(receiveTasks(tasks)))
+
+}
+
 export const fetchTasks = (listId) => dispatch => {
     return APIUtil.fetchTasks(listId)
         .then(tasks => dispatch(receiveTasks(tasks)))

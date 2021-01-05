@@ -5,7 +5,6 @@ import CreateTaskFormContainer from './create_task_form_container'
 
 
 const taskItem = props => {
-    
     return (
             <>
             <li className="task-item">

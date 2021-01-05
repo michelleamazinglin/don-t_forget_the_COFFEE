@@ -58,6 +58,10 @@ class Main extends React.Component {
                     <Switch>
                         <Route exact path="/app/lists/:listId/:taskId" component={TaskShowContainer} />
                     </Switch>
+
+                    {/* <Switch>
+                        <Route exact path="/app/:listId/:taskId" component={TaskShowContainer} />
+                    </Switch> */}
                     
                    
                 </div>

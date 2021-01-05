@@ -6,6 +6,7 @@ import { updateTask, deleteTask } from '../../actions/task_actions';
 const mapStateToProps = (state, ownProps) => {
     const taskId = ownProps.match.params.taskId;
     const currentTask = state.entities.tasks[taskId];
+    // create if condition
     return {
         currentTask: currentTask,
         taskId: taskId,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import TaskItem from './task_item';
+import AllTaskItem from './all_task_item';
 import CreateTaskFormContainer from './create_task_form_container';
 
 
@@ -25,7 +25,7 @@ class AllTasks extends React.Component {
         const { tasks, deleteTask, listId, list } = this.props;
 
         const SortedTasks = tasks.sort(time);
-
+        // console.log(SortedTasks)
         const TasksNum = tasks.length;
         // debugger
         return (
@@ -35,11 +35,11 @@ class AllTasks extends React.Component {
                 <ul className="task-items">
                     
                     {
-                        SortedTasks.map(task => <TaskItem
+                        SortedTasks.map(task => <AllTaskItem
                             task={task}
                             deleteTask={deleteTask}
                             key={`list-${task.id}`}
-                            listId={listId}
+                            listId={task.listId}
                         />
                             )
                                 // for each list, render list item

@@ -2,9 +2,15 @@ class Api::TasksController < ApplicationController
 
     def index
         # debugger
+
+        # @tasks = current_user.tasks
+        
         @tasks = List.find(params[:list_id]).tasks
         render :index
     end
+
+
+
 
     def show 
         @task = List.find(params[:list_id]).Task.find(params[:id])

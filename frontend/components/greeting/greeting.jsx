@@ -38,8 +38,8 @@ class Greeting extends React.Component {
     <footer>
         <p>© 2020 Don't forget the COFFEE by Michelle Lin</p>
         <div className="footer-icon">
-          <a href="https://github.com/michelleamazinglin"><img src={githubUrl} alt="Github" width="20" /></a>
-          <a href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="20" /></a>
+          <a target="_blank" href="https://github.com/michelleamazinglin"><img src={githubUrl} alt="Github" width="20" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="20" /></a>
         </div>
     </footer>
 

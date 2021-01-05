@@ -38,8 +38,8 @@ class Main extends React.Component {
             <div className="main-page">
                 <header className="main-page-header">
                     <div className="main-page-header-icon">
-                        <a href="https://github.com/michelleamazinglin"><img src={githubUrl} alt="Github" width="25" /></a>
-                        <a href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="25" /></a>
+                        <a target="_blank" href="https://github.com/michelleamazinglin"><img src={githubUrl} alt="Github" width="25" /></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="25" /></a>
                     </div>
                     <div className="main-page-header-logout">
                         <button className="header-button" onClick={this.handleLogout}>Log Out</button>

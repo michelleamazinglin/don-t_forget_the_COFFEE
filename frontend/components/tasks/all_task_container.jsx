@@ -18,6 +18,7 @@ const mapStateToProps = (state, ownProps) => {
     // debugger
     // console.log(state, ownProps)
     return {
+        currentUser: state.session.currentUser,
         listId: listId,
         tasks: Object.values(state.entities.tasks),
         showCompleted: showCompleted,

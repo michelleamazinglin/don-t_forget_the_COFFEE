@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import AllTaskItem from './all_task_item';
-import CreateTaskFormContainer from './create_task_form_container';
+import AllTaskCreate from './all_task_create_container';
 
 
 class AllTasks extends React.Component {
@@ -31,7 +31,7 @@ class AllTasks extends React.Component {
         return (
             <>
             <div className="middlebar">
-                <CreateTaskFormContainer />
+                <AllTaskCreate />
                 <ul className="task-items">
                     
                     {

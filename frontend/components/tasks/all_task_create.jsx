@@ -14,7 +14,7 @@ class AllTaskCreate extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const task = this.state;
-        this.setState({ body: '' });
+        this.setState({ body: ''});
         this.props.createTask(task, this.props.task.listId);
     }
 

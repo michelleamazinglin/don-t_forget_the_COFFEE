@@ -7,6 +7,13 @@ class TaskShow extends React.Component {
         super(props);
 
         this.state = this.props.currentTask;
+        this.state = {
+            id: '',
+            listId: '',
+            body: '',
+            completed: '',
+            }
+
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.lists = this.lists.bind(this);
@@ -14,6 +21,17 @@ class TaskShow extends React.Component {
         this.deleteTask = this.deleteTask.bind(this);
     }
     // 这里或者上面的submit有问题，listId在submit的时候没有改变。
+
+    componentDidMount() {
+        this.setState({
+            id: this.props.currentTask.id,
+            listId: this.props.listId,
+            body: this.props.currentTask.body,
+            completed: this.props.currentTask.completed,
+        })
+    }
+
+
     lists() {
         return this.props.lists.map(list => {
             return (
@@ -54,6 +72,7 @@ class TaskShow extends React.Component {
     }
 
     render() {
+        // console.log(this.state)
         return (  
             <>
             
@@ -66,6 +85,7 @@ class TaskShow extends React.Component {
                     <input className="task-edit-body" onChange={this.update('body')} type="text" value={this.state.body} placeholder="title" />
                     <label className="task-edit-list">list
                         <select value={this.state.listId} onChange={this.update('listId')}>
+                        <option value={0}>Pick a list</option>
                         {this.lists()}
                         </select>
                     </label>
@@ -83,4 +103,4 @@ class TaskShow extends React.Component {
 
 }
 
-export default TaskShow;
+export default withRouter(TaskShow);

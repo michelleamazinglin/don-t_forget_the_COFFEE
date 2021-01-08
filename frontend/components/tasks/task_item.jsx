@@ -19,4 +19,4 @@ const taskItem = props => {
         )
 }
 
-export default taskItem;
+export default withRouter(taskItem);

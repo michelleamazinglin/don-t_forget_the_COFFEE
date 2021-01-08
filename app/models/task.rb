@@ -10,7 +10,7 @@
 #  updated_at :datetime         not null
 #
 class Task < ApplicationRecord
-    validates :body, :list_id, presence: true
+    validates :body, presence: true
 
     belongs_to :list,
         primary_key: :id,

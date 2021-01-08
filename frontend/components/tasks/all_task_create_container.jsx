@@ -6,9 +6,8 @@ import { createTask } from '../../actions/task_actions';
 const mapStateToProps = (state) => ({
     task: {
         body: '',
-        listId: 0,
         completed: false,
-    }
+    },
 });
 
 const mapDispatchToProps = dispatch => ({

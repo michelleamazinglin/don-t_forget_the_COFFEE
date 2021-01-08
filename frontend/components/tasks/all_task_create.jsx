@@ -40,4 +40,4 @@ class AllTaskCreate extends React.Component {
     }
 }
 
-export default AllTaskCreate;
+export default withRouter(AllTaskCreate);

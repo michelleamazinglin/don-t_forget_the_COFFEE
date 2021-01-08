@@ -28,10 +28,13 @@ class AllTasks extends React.Component {
         // console.log(SortedTasks)
         const TasksNum = tasks.length;
         // debugger
+
+        // if (!listId) {return null}
+
         return (
             <>
             <div className="middlebar">
-                <AllTaskCreate />
+                {/* <AllTaskCreate /> */}
                 <ul className="task-items">
                     
                     {
@@ -63,4 +66,4 @@ class AllTasks extends React.Component {
     }
 }
 
-export default AllTasks;
+export default withRouter(AllTasks);

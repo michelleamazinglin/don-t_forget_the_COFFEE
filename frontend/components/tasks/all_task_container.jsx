@@ -36,4 +36,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AllTasks);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AllTasks));

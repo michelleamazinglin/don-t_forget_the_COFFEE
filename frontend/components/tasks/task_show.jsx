@@ -6,13 +6,12 @@ class TaskShow extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = this.props.currentTask;
         this.state = {
-            id: '',
-            listId: '',
-            body: '',
-            completed: '',
-            }
+            currentTask: this.props.currentTask,
+            listId: this.props.listId,
+        }
+        
+        
 
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,6 +32,7 @@ class TaskShow extends React.Component {
 
 
     lists() {
+        console.log(this.state)
         return this.props.lists.map(list => {
             return (
                 <option
@@ -48,6 +48,13 @@ class TaskShow extends React.Component {
             this.setState({ [field]: e.currentTarget.value });
         }
     }
+
+    // updateListId(field) {
+    //     return e => this.props.updateTask ({
+    //         task: this.state.currentTask,
+    //         listId: this.state.listId,
+    //     }, this.state.listId)
+    // }
 
     handleSubmit(e) {
         e.preventDefault();
@@ -72,7 +79,7 @@ class TaskShow extends React.Component {
     }
 
     render() {
-        // console.log(this.state)
+        console.log(this.state)
         return (  
             <>
             

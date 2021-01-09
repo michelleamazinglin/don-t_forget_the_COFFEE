@@ -55,6 +55,7 @@ class Main extends React.Component {
                         <a target="_blank" href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="25" /></a>
                     </div>
                     <div className="search-bar-container">
+                        
                         <form onSubmit={this.search}>
                             <input onChange={this.updateSearch} value={this.state.search}/>
                         </form>

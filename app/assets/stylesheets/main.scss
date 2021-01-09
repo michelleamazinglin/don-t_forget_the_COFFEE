@@ -11,13 +11,17 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     background-color: #0360BF;
     position: relative;
     height: 38px;
 }
-
+.main-page-header-icon {
+    position: relative;
+    width: 200px;
+    text-align: left;
+    min-width: 200px;
+}
 .main-page-header-icon > a{
     margin: 5px;
     position: relative;
@@ -108,4 +112,31 @@
   position: relative;
   left: 85px;
   top: -16px;
+}
+
+.search-bar-container {
+    position: relative;
+    width: 50%;
+    text-align: left;
+}
+
+.search-bar-container > form > input {
+    background-color: #4580CD;
+    border: none;
+    height: 26px;
+    width: 266px;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.search-bar-container > form > input:focus {
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.main-page-header-logout {
+    position: relative;
+    width: 36%;
+    text-align: right;
 }

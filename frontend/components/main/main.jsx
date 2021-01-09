@@ -20,8 +20,12 @@ import SearchContainer from '../search/search_container';
 class Main extends React.Component {
     constructor(props) {
         super(props);
+        
+        this.state = {search: ''};
 
         this.handleLogout = this.handleLogout.bind(this);
+        this.updateSearch = this.updateSearch.bind(this);
+        this.search = this.search.bind(this);
     } 
 
     handleLogout(e) {
@@ -32,6 +36,15 @@ class Main extends React.Component {
             //redirect
     }
 
+    updateSearch(e) {
+        this.setState({ search: e.target.value });
+    }
+
+    search(e) {
+        e.preventDefault();
+        this.props.history.push(`/search/${this.state.search}`);
+    }
+
     render() {
         return (
             <>
@@ -40,6 +53,11 @@ class Main extends React.Component {
                     <div className="main-page-header-icon">
                         <a target="_blank" href="https://github.com/michelleamazinglin"><img src={githubUrl} alt="Github" width="25" /></a>
                         <a target="_blank" href="https://www.linkedin.com/in/michelle-lin-9b9b8614b/"><img src={linkedinUrl} alt="Linkedin" width="25" /></a>
+                    </div>
+                    <div className="search-bar-container">
+                        <form onSubmit={this.search}>
+                            <input onChange={this.updateSearch} value={this.state.search}/>
+                        </form>
                     </div>
                     <div className="main-page-header-logout">
                         <button className="header-button" onClick={this.handleLogout}>Log Out</button>
@@ -57,13 +75,11 @@ class Main extends React.Component {
 
                     <Switch>
                         <Route exact path="/app/lists/:listId/:taskId" component={TaskShowContainer} />
-                    </Switch>
+                    </Switch>   
 
-                    {/* <Switch>
-                        <Route exact path="/app/:listId/:taskId" component={TaskShowContainer} />
-                    </Switch> */}
-                    
-                   
+                    <Switch>
+                        <Route path="/search/:searchTerm" component={SearchContainer} />
+                    </Switch>                 
                 </div>
             </div>
             </>

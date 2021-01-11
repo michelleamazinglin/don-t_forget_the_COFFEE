@@ -57,7 +57,7 @@ class Main extends React.Component {
                     <div className="search-bar-container">
                         
                         <form onSubmit={this.search}>
-                            <input onChange={this.updateSearch} value={this.state.search}/>
+                            <input onChange={this.updateSearch} value={this.state.search} placeholder="Search for task..."/>
                         </form>
                     </div>
                     <div className="main-page-header-logout">

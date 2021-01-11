@@ -17,6 +17,7 @@ class Task < ApplicationRecord
     #     foreign_key: :list_id,
     #     class_name: "List"
 
+
     has_one :user,
         through: :list,
         source: :user

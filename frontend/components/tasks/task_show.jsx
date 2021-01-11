@@ -32,7 +32,6 @@ class TaskShow extends React.Component {
 
 
     lists() {
-        console.log(this.state)
         return this.props.lists.map(list => {
             return (
                 <option
@@ -59,7 +58,6 @@ class TaskShow extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const task = this.state;
-        console.log(this.props)
         this.props.updateTask(task, this.props.listId).then((action) => {
             if (isNaN(this.props.listId)) {
                 this.props.history.push(`/app/all`)
@@ -92,7 +90,6 @@ class TaskShow extends React.Component {
     }
 
     render() {
-        console.log(this.state)
         return (  
             <>
             

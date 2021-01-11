@@ -20,6 +20,7 @@ class Api::TasksController < ApplicationController
     def create
         @task = Task.new(task_params)
         @task.list_id = params[:list_id] 
+        @task.user_id = params[:user_id]
         # debugger
         if @task.save!
             render :show
@@ -49,6 +50,6 @@ class Api::TasksController < ApplicationController
     private
 
     def task_params
-        params.require(:task).permit(:list_id, :body, :completed)
+        params.require(:task).permit(:list_id, :body, :completed, :user_id)
     end
 end

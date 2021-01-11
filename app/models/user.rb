@@ -28,6 +28,8 @@ class User < ApplicationRecord
         through: :lists,
         source: :tasks
 
+
+
     after_initialize :ensure_session_token
 
     def self.find_by_credentials(username, password)

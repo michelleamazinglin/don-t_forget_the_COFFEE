@@ -5,8 +5,12 @@ class AllTaskCreate extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = this.props.task;
-
+        this.state = {
+            body: '',
+            user_id: this.props.currentUser,
+            completed: false,
+        }
+        
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 

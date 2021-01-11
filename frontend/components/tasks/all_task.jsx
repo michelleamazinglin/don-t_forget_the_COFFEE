@@ -34,7 +34,7 @@ class AllTasks extends React.Component {
         return (
             <>
             <div className="middlebar">
-                <AllTaskCreate />
+                {/* <AllTaskCreate /> */}
                 <ul className="task-items">
                     
                     {

@@ -9,7 +9,7 @@ class CreateListForm extends React.Component {
             title: '',
             user_id: this.props.currentUser,
         }
-
+        
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 

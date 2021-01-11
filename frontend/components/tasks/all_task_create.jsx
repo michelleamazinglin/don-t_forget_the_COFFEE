@@ -15,7 +15,7 @@ class AllTaskCreate extends React.Component {
         e.preventDefault();
         const task = this.state;
         this.setState({ body: ''});
-        this.props.createTask(task, this.props.task.listId);
+        this.props.createNoListTask(task);
     }
 
     update(field) {

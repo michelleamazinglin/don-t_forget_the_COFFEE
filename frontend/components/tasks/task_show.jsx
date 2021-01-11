@@ -59,8 +59,13 @@ class TaskShow extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const task = this.state;
+        console.log(this.props)
         this.props.updateTask(task, this.props.listId).then((action) => {
-            this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+            if (isNaN(this.props.listId)) {
+                this.props.history.push(`/app/all`)
+            } else {
+                this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+            }
         });
         
     }
@@ -69,13 +74,21 @@ class TaskShow extends React.Component {
         const newState = Object.assign({}, this.state, {completed: e.target.checked});
 
         this.props.updateTask(newState).then((action) => {
-            this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
-        });3
+            if (isNaN(this.props.listId)) {
+                this.props.history.push(`/app/all`)
+            } else {
+                this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+            }
+        });
     }
 
     deleteTask() {
         this.props.deleteTask(this.props.currentTask.id, this.props.listId);
-        this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+        if (isNaN(this.props.listId)) {
+            this.props.history.push(`/app/all`)
+        } else {
+            this.props.history.push(`${this.props.match.url.split('/').slice(0,-1).join('/')}`);
+        }
     }
 
     render() {

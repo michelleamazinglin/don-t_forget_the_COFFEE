@@ -20,6 +20,7 @@ export const fetchTask = ( listId, taskId ) => (
     })
 );
 
+
 export const createTask = (task, listId) => {
     return $.ajax({
         url: `/api/lists/${listId}/tasks`,
@@ -27,6 +28,15 @@ export const createTask = (task, listId) => {
         data: { task },
     });
 };
+
+export const createNoListTask = (task) => {
+    return $.ajax({
+        url: `/api/tasks`,
+        method: "POST",
+        data: { task },
+    });
+};
+
 
 export const updateTask = (task, listId) => (
     $.ajax({

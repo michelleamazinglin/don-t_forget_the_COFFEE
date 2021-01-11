@@ -19,12 +19,12 @@ class Api::TasksController < ApplicationController
 
     def create
         @task = Task.new(task_params)
-        @task.list_id = params[:list_id]
+        @task.list_id = params[:list_id] 
         # debugger
-        if @task.save
+        if @task.save!
             render :show
         else
-            render json: ['invalid, please try again :(']
+            render json: @task.errors.full_messages, status: 422
         end
     end
 

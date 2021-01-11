@@ -42,6 +42,11 @@ export const fetchTask = (listId, taskId) => dispatch => {
         .then(task => dispatch(removeTask(task)))
 }
 
+export const createNoListTask = (task) => dispatch => {
+    return APIUtil.createNoListTask(task)
+        .then(createdTask => dispatch(receiveTask(createdTask)))
+}
+
 export const createTask = (task, listId) => dispatch => {
     // debugger
     return APIUtil.createTask(task, listId)

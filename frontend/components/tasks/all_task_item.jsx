@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import TaskItem from './task_item';
-import CreateTaskFormContainer from './create_task_form_container'
+
 
 
 const taskItem = props => {

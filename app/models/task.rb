@@ -12,10 +12,10 @@
 class Task < ApplicationRecord
     validates :body, presence: true
 
-    belongs_to :list,
-        primary_key: :id,
-        foreign_key: :list_id,
-        class_name: "List"
+    # belongs_to :list,
+    #     primary_key: :id,
+    #     foreign_key: :list_id,
+    #     class_name: "List"
 
     has_one :user,
         through: :list,

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import AllTaskCreate from './create_task_form';
-import { createTask } from '../../actions/task_actions';
+import AllTaskCreate from './all_task_create';
+import { createNoListTask } from '../../actions/task_actions';
 
 const mapStateToProps = (state) => ({
     task: {
@@ -11,7 +11,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    createTask: (task, listId) => dispatch(createTask(task, listId))
+    createNoListTask: (task) => dispatch(createNoListTask(task))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AllTaskCreate));

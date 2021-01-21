@@ -20,7 +20,6 @@ class Api::TasksController < ApplicationController
     def create
         @task = Task.new(task_params)
         @task.list_id = params[:list_id] 
-        @task.user_id = params[:user_id]
         # debugger
         if @task.save!
             render :show

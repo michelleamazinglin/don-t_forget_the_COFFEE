@@ -1,4 +1,5 @@
-# Don't forget the COFFEE
+
+[Don't forget the COFFEE Live] (https://dont-forget-the-coffee.herokuapp.com/#/)
 
 ![logo](app/assets/images/logo.png)
 

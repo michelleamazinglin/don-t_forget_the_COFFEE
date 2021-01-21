@@ -31,6 +31,8 @@ class AllTasks extends React.Component {
 
         // if (!listId) {return null}
 
+        // const incomplete = this.props.
+
         return (
             <>
             <div className="middlebar">

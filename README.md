@@ -26,6 +26,7 @@ Don't forget the COFFEE is a clone of a powerful todo app, Remember the milk. Us
 
   
 **2. NEW ACCOUNT CREATION, LOGIN, AND DEMO LOGIN**
+![User Auth](app/assets/images/loginlogout.gif)
 > * Users can sign up, sign in, and log out
 > * Users can use demo button to log in to see all features
 > 
@@ -33,24 +34,28 @@ Don't forget the COFFEE is a clone of a powerful todo app, Remember the milk. Us
 
   
 **3. LISTS**
+![lists](app/assets/images/lists.gif)
 > * Users can create, edit, and delete lists
 > * Users can see saved data when using demo login
 >
 > Timeline: 2 day
   
 **4. TASKS**
+![tasks](app/assets/images/tasks.gif)
 > * Users can create, edit, and delete tasks
 > * Side page show up with task info when users click on the task
 > 
 > Timeline: 2 day
   
 **5. LIST SUMMARY**
+![list summary](app/assets/images/list_summ.gif)
 > * users can see numbers of total tasks and completed tasks as quick view
 > * users can see estimated time to complete the tasks
 > 
 > Timeline: 1 day
   
 **6. Search**
+![Search](app/assets/images/search.gif)
 > * users can use search bar to search for tasks
 > * create a search bar that implements debouncing
 >

@@ -11,3 +11,7 @@ const configureStore = (preloadedState = {}) =>
                 );
 
 export default configureStore;
+
+// reducer is require that receives the app's current state and incoming actions
+// preloadedstate is optional, representing any application state taht existed before thr store was created
+// 

@@ -6,7 +6,6 @@ class EditListForm extends React.Component {
         super(props);
 
         this.state = this.props.list;
-
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -19,8 +18,6 @@ class EditListForm extends React.Component {
         this.props.closeModal();
             // .then(() => this.props.closeModal());
         this.setState({ title: '' });
-
-        
     }
 
     update(field) {

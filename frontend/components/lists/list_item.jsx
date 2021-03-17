@@ -2,8 +2,6 @@ import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import Modal from '../modal/modal';
 
-
-
 const listItem = props => {
     return(
         <>
